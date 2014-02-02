@@ -1,0 +1,11 @@
+C:\Users\Sam\Downloads\mcsharp-source\MCSharp.Gui\bin\Release\MCSharp Gui.exe
+C:\Users\Sam\Downloads\mcsharp-source\MCSharp.Gui\bin\Release\MCSharp Gui.pdb
+C:\Users\Sam\Downloads\mcsharp-source\MCSharp.Gui\bin\Release\MCSharp.dll
+C:\Users\Sam\Downloads\mcsharp-source\MCSharp.Gui\bin\Release\Meebey.SmartIrc4net.dll
+C:\Users\Sam\Downloads\mcsharp-source\MCSharp.Gui\obj\Release\ResolveAssemblyReference.cache
+C:\Users\Sam\Downloads\mcsharp-source\MCSharp.Gui\obj\Release\MCSharp.Gui.Properties.Resources.resources
+C:\Users\Sam\Downloads\mcsharp-source\MCSharp.Gui\obj\Release\MCSharp.Gui.Window.resources
+C:\Users\Sam\Downloads\mcsharp-source\MCSharp.Gui\obj\Release\GenerateResource.read.1.tlog
+C:\Users\Sam\Downloads\mcsharp-source\MCSharp.Gui\obj\Release\GenerateResource.write.1.tlog
+C:\Users\Sam\Downloads\mcsharp-source\MCSharp.Gui\obj\Release\MCSharp Gui.exe
+C:\Users\Sam\Downloads\mcsharp-source\MCSharp.Gui\obj\Release\MCSharp Gui.pdb

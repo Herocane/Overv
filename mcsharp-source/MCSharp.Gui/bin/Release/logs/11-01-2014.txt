@@ -1,0 +1,1277 @@
+(00:40:07) Starting Server
+(00:40:07) LOADED: server.properties
+(00:40:07) SAVED: server.properties
+(00:40:09) Finished setting up server
+(00:40:09) Level initialized
+(00:40:09) URL: http://www.classicube.net/server/play/7b39c3c6e05af7bd21b9592c1e35b336/
+(00:40:09) LOADED: command.properties
+(00:40:09) LOADED: portals.db
+(00:40:09) autoload.txt does not exist
+(00:40:09) Creating listening socket on port 25565... 
+(00:40:09) Done.
+(00:40:36) 192.168.0.1 connected.
+(00:40:36) New Connection
+(00:40:36) 192.168.0.1 logging in as Marvy.
+(00:40:45) Marvy used /red 
+(00:42:03) Marvy disconnected.
+(00:43:52) Starting Server
+(00:43:52) LOADED: server.properties
+(00:43:52) SAVED: server.properties
+(00:43:54) Finished setting up server
+(00:43:54) Level initialized
+(00:43:54) URL: http://www.classicube.net/server/play/7b39c3c6e05af7bd21b9592c1e35b336/
+(00:43:54) LOADED: command.properties
+(00:43:54) LOADED: portals.db
+(00:43:54) autoload.txt does not exist
+(00:43:54) Creating listening socket on port 25565... 
+(00:43:54) Done.
+(00:45:32) Starting Server
+(00:45:32) LOADED: server.properties
+(00:45:32) SAVED: server.properties
+(00:45:34) Finished setting up server
+(00:45:34) URL: http://www.classicube.net/server/play/7b39c3c6e05af7bd21b9592c1e35b336/
+(00:45:34) Level initialized
+(00:45:34) LOADED: command.properties
+(00:45:34) LOADED: portals.db
+(00:45:34) autoload.txt does not exist
+(00:45:34) Creating listening socket on port 25565... 
+(00:45:34) Done.
+(00:45:51) 192.168.0.1 connected.
+(00:45:51) New Connection
+(00:45:51) 192.168.0.1 logging in as Marvy.
+(00:45:54) Marvy used /red 
+(00:46:32) Marvy disconnected.
+(00:46:38) Starting Server
+(00:46:38) LOADED: server.properties
+(00:46:38) SAVED: server.properties
+(00:46:40) Finished setting up server
+(00:46:40) Level initialized
+(00:46:40) URL: http://www.classicube.net/server/play/7b39c3c6e05af7bd21b9592c1e35b336/
+(00:46:40) LOADED: command.properties
+(00:46:40) LOADED: portals.db
+(00:46:40) autoload.txt does not exist
+(00:46:40) Creating listening socket on port 25565... 
+(00:46:40) Done.
+(00:46:55) 192.168.0.1 connected.
+(00:46:55) New Connection
+(00:46:55) 192.168.0.1 logging in as Marvy.
+(00:47:00) Marvy used /red 
+(00:47:20) Marvy disconnected.
+(00:49:04) Starting Server
+(00:49:04) LOADED: server.properties
+(00:49:04) SAVED: server.properties
+(00:49:05) Finished setting up server
+(00:49:05) Level initialized
+(00:49:05) URL: http://www.classicube.net/server/play/7b39c3c6e05af7bd21b9592c1e35b336/
+(00:49:05) LOADED: command.properties
+(00:49:05) LOADED: portals.db
+(00:49:05) autoload.txt does not exist
+(00:49:05) Creating listening socket on port 25565... 
+(00:49:05) Done.
+(00:49:18) 192.168.0.1 connected.
+(00:49:18) New Connection
+(00:49:18) 192.168.0.1 logging in as Marvy.
+(00:49:21) Marvy used /red 
+(00:49:22) GOT HERE
+(00:49:22) GOT HERE
+(00:49:22) GOT HERE
+(00:49:22) GOT HERE
+(00:49:22) GOT HERE
+(00:49:22) GOT HERE
+(00:49:22) GOT HERE
+(00:49:22) GOT HERE
+(00:49:23) GOT HERE
+(00:49:23) GOT HERE
+(00:49:23) GOT HERE
+(00:49:23) GOT HERE
+(00:49:23) GOT HERE
+(00:49:23) GOT HERE
+(00:49:23) GOT HERE
+(00:49:23) GOT HERE
+(00:49:23) GOT HERE
+(00:49:23) GOT HERE
+(00:49:24) GOT HERE
+(00:49:24) GOT HERE
+(00:49:24) GOT HERE
+(00:49:24) GOT HERE
+(00:49:24) GOT HERE
+(00:49:24) GOT HERE
+(00:49:24) GOT HERE
+(00:49:24) GOT HERE
+(00:49:25) GOT HERE
+(00:49:25) GOT HERE
+(00:49:25) GOT HERE
+(00:49:25) GOT HERE
+(00:49:25) GOT HERE
+(00:49:25) GOT HERE
+(00:49:25) GOT HERE
+(00:49:25) GOT HERE
+(00:49:25) GOT HERE
+(00:49:25) GOT HERE
+(00:49:26) GOT HERE
+(00:49:26) GOT HERE
+(00:49:26) GOT HERE
+(00:49:26) GOT HERE
+(00:49:26) GOT HERE
+(00:49:26) GOT HERE
+(00:49:26) GOT HERE
+(00:49:26) GOT HERE
+(00:49:27) GOT HERE
+(00:49:27) GOT HERE
+(00:49:27) GOT HERE
+(00:49:27) GOT HERE
+(00:49:27) GOT HERE
+(00:49:27) GOT HERE
+(00:49:27) GOT HERE
+(00:49:27) GOT HERE
+(00:49:27) GOT HERE
+(00:49:27) GOT HERE
+(00:49:28) GOT HERE
+(00:49:28) GOT HERE
+(00:49:28) GOT HERE
+(00:49:28) GOT HERE
+(00:49:28) GOT HERE
+(00:49:28) GOT HERE
+(00:49:28) GOT HERE
+(00:49:28) GOT HERE
+(00:49:29) GOT HERE
+(00:49:29) GOT HERE
+(00:49:29) GOT HERE
+(00:49:29) GOT HERE
+(00:49:29) GOT HERE
+(00:49:29) GOT HERE
+(00:49:29) GOT HERE
+(00:49:29) GOT HERE
+(00:49:29) GOT HERE
+(00:49:29) GOT HERE
+(00:49:30) GOT HERE
+(00:49:30) GOT HERE
+(00:49:30) GOT HERE
+(00:49:30) GOT HERE
+(00:49:30) GOT HERE
+(00:49:30) GOT HERE
+(00:49:30) GOT HERE
+(00:49:30) GOT HERE
+(00:49:31) GOT HERE
+(00:49:31) GOT HERE
+(00:49:31) GOT HERE
+(00:49:31) GOT HERE
+(00:49:31) GOT HERE
+(00:49:31) GOT HERE
+(00:49:31) GOT HERE
+(00:49:31) GOT HERE
+(00:49:31) GOT HERE
+(00:49:31) GOT HERE
+(00:49:32) GOT HERE
+(00:49:32) GOT HERE
+(00:49:32) GOT HERE
+(00:49:32) GOT HERE
+(00:49:32) GOT HERE
+(00:49:32) GOT HERE
+(00:49:32) GOT HERE
+(00:49:32) GOT HERE
+(00:49:33) GOT HERE
+(00:49:33) GOT HERE
+(00:49:33) GOT HERE
+(00:49:33) GOT HERE
+(00:49:33) GOT HERE
+(00:49:33) GOT HERE
+(00:49:33) GOT HERE
+(00:49:33) GOT HERE
+(00:49:33) GOT HERE
+(00:49:33) GOT HERE
+(00:49:34) GOT HERE
+(00:49:34) GOT HERE
+(00:49:34) GOT HERE
+(00:49:34) GOT HERE
+(00:49:34) GOT HERE
+(00:49:34) GOT HERE
+(00:49:34) GOT HERE
+(00:49:34) GOT HERE
+(00:49:35) GOT HERE
+(00:49:35) GOT HERE
+(00:49:35) GOT HERE
+(00:49:35) GOT HERE
+(00:49:35) GOT HERE
+(00:49:35) GOT HERE
+(00:49:35) GOT HERE
+(00:49:35) GOT HERE
+(00:49:35) GOT HERE
+(00:49:35) GOT HERE
+(00:49:36) GOT HERE
+(00:49:36) GOT HERE
+(00:49:36) GOT HERE
+(00:49:36) GOT HERE
+(00:49:36) GOT HERE
+(00:49:36) GOT HERE
+(00:49:36) GOT HERE
+(00:49:36) GOT HERE
+(00:49:37) GOT HERE
+(00:49:37) GOT HERE
+(00:49:37) GOT HERE
+(00:49:37) GOT HERE
+(00:49:37) GOT HERE
+(00:49:37) GOT HERE
+(00:49:37) GOT HERE
+(00:49:37) GOT HERE
+(00:49:37) GOT HERE
+(00:49:37) GOT HERE
+(00:49:38) GOT HERE
+(00:49:38) GOT HERE
+(00:49:38) GOT HERE
+(00:49:38) GOT HERE
+(00:49:38) GOT HERE
+(00:49:38) GOT HERE
+(00:49:38) GOT HERE
+(00:49:38) GOT HERE
+(00:49:39) GOT HERE
+(00:49:39) GOT HERE
+(00:49:39) GOT HERE
+(00:49:39) GOT HERE
+(00:49:39) GOT HERE
+(00:49:39) GOT HERE
+(00:49:39) GOT HERE
+(00:49:39) GOT HERE
+(00:49:39) GOT HERE
+(00:49:39) GOT HERE
+(00:49:40) GOT HERE
+(00:49:40) GOT HERE
+(00:49:40) GOT HERE
+(00:49:40) GOT HERE
+(00:49:40) GOT HERE
+(00:49:40) GOT HERE
+(00:49:40) GOT HERE
+(00:49:40) GOT HERE
+(00:49:41) GOT HERE
+(00:49:41) GOT HERE
+(00:49:41) GOT HERE
+(00:49:41) GOT HERE
+(00:49:41) GOT HERE
+(00:49:41) GOT HERE
+(00:49:41) GOT HERE
+(00:49:41) GOT HERE
+(00:49:41) GOT HERE
+(00:49:41) GOT HERE
+(00:49:42) GOT HERE
+(00:49:42) GOT HERE
+(00:49:42) GOT HERE
+(00:49:42) GOT HERE
+(00:49:42) GOT HERE
+(00:49:42) GOT HERE
+(00:49:42) GOT HERE
+(00:49:42) GOT HERE
+(00:49:43) GOT HERE
+(00:49:43) GOT HERE
+(00:49:43) GOT HERE
+(00:49:43) GOT HERE
+(00:49:43) GOT HERE
+(00:49:43) GOT HERE
+(00:49:43) GOT HERE
+(00:49:43) GOT HERE
+(00:49:43) GOT HERE
+(00:49:43) GOT HERE
+(00:49:44) GOT HERE
+(00:49:44) GOT HERE
+(00:49:44) GOT HERE
+(00:49:44) GOT HERE
+(00:49:44) GOT HERE
+(00:49:44) GOT HERE
+(00:49:44) GOT HERE
+(00:49:44) GOT HERE
+(00:49:45) GOT HERE
+(00:49:45) GOT HERE
+(00:49:45) GOT HERE
+(00:49:45) GOT HERE
+(00:49:45) GOT HERE
+(00:49:45) GOT HERE
+(00:49:45) GOT HERE
+(00:49:45) GOT HERE
+(00:49:45) Marvy disconnected.
+(00:49:46) GOT HERE
+(00:49:46) GOT HERE
+(00:49:46) GOT HERE
+(00:49:46) GOT HERE
+(00:49:46) GOT HERE
+(00:49:46) GOT HERE
+(00:50:07) Starting Server
+(00:50:07) LOADED: server.properties
+(00:50:07) SAVED: server.properties
+(00:50:09) Finished setting up server
+(00:50:09) Level initialized
+(00:50:09) URL: http://www.classicube.net/server/play/7b39c3c6e05af7bd21b9592c1e35b336/
+(00:50:09) LOADED: command.properties
+(00:50:09) LOADED: portals.db
+(00:50:09) autoload.txt does not exist
+(00:50:09) Creating listening socket on port 25565... 
+(00:50:09) Done.
+(00:50:23) 192.168.0.1 connected.
+(00:50:23) New Connection
+(00:50:24) 192.168.0.1 logging in as Marvy.
+(00:50:27) Marvy used /red 
+(00:50:27) GOT HERE
+(00:50:27) GOT HERE
+(00:50:27) GOT HERE
+(00:50:27) GOT HERE
+(00:50:28) GOT HERE
+(00:50:28) GOT HERE
+(00:50:28) GOT HERE
+(00:50:28) GOT HERE
+(00:50:28) GOT HERE
+(00:50:28) GOT HERE
+(00:50:28) GOT HERE
+(00:50:28) GOT HERE
+(00:50:29) GOT HERE
+(00:50:29) GOT HERE
+(00:50:29) GOT HERE
+(00:50:29) GOT HERE
+(00:50:29) GOT HERE
+(00:50:29) GOT HERE
+(00:50:29) GOT HERE
+(00:50:29) GOT HERE
+(00:50:29) GOT HERE
+(00:50:30) GOT HERE
+(00:50:30) GOT HERE
+(00:50:30) GOT HERE
+(00:50:30) GOT HERE
+(00:50:30) GOT HERE
+(00:50:30) GOT HERE
+(00:50:30) GOT HERE
+(00:50:30) GOT HERE
+(00:50:30) GOT HERE
+(00:50:31) GOT HERE
+(00:50:31) GOT HERE
+(00:50:31) GOT HERE
+(00:50:31) GOT HERE
+(00:50:31) GOT HERE
+(00:50:31) GOT HERE
+(00:50:31) GOT HERE
+(00:50:31) GOT HERE
+(00:50:32) GOT HERE
+(00:50:32) GOT HERE
+(00:50:32) GOT HERE
+(00:50:32) GOT HERE
+(00:50:32) GOT HERE
+(00:50:32) GOT HERE
+(00:50:32) GOT HERE
+(00:50:32) GOT HERE
+(00:50:32) GOT HERE
+(00:50:32) GOT HERE
+(00:50:33) GOT HERE
+(00:50:33) GOT HERE
+(00:50:33) GOT HERE
+(00:50:33) GOT HERE
+(00:50:33) GOT HERE
+(00:50:33) GOT HERE
+(00:50:33) GOT HERE
+(00:50:33) GOT HERE
+(00:50:34) GOT HERE
+(00:50:34) GOT HERE
+(00:50:34) GOT HERE
+(00:50:34) GOT HERE
+(00:50:34) GOT HERE
+(00:50:34) GOT HERE
+(00:50:34) GOT HERE
+(00:50:34) GOT HERE
+(00:50:35) GOT HERE
+(00:50:35) GOT HERE
+(00:50:35) GOT HERE
+(00:50:35) GOT HERE
+(00:50:35) GOT HERE
+(00:50:35) GOT HERE
+(00:50:35) GOT HERE
+(00:50:35) GOT HERE
+(00:50:35) GOT HERE
+(00:50:35) GOT HERE
+(00:50:36) GOT HERE
+(00:50:36) GOT HERE
+(00:50:36) GOT HERE
+(00:50:36) GOT HERE
+(00:50:36) GOT HERE
+(00:50:36) GOT HERE
+(00:50:36) GOT HERE
+(00:50:36) GOT HERE
+(00:50:37) GOT HERE
+(00:50:37) GOT HERE
+(00:50:37) GOT HERE
+(00:50:37) GOT HERE
+(00:50:37) GOT HERE
+(00:50:37) GOT HERE
+(00:50:37) GOT HERE
+(00:50:37) GOT HERE
+(00:50:37) GOT HERE
+(00:50:37) GOT HERE
+(00:50:38) GOT HERE
+(00:50:38) GOT HERE
+(00:50:38) GOT HERE
+(00:50:38) GOT HERE
+(00:50:38) GOT HERE
+(00:50:38) GOT HERE
+(00:50:38) GOT HERE
+(00:50:38) GOT HERE
+(00:50:39) GOT HERE
+(00:50:39) GOT HERE
+(00:50:39) GOT HERE
+(00:50:39) GOT HERE
+(00:50:39) GOT HERE
+(00:50:39) GOT HERE
+(00:50:39) GOT HERE
+(00:50:39) GOT HERE
+(00:50:39) GOT HERE
+(00:50:39) GOT HERE
+(00:50:40) GOT HERE
+(00:50:40) GOT HERE
+(00:50:40) GOT HERE
+(00:50:40) GOT HERE
+(00:50:40) GOT HERE
+(00:50:40) GOT HERE
+(00:50:40) GOT HERE
+(00:50:40) GOT HERE
+(00:50:41) GOT HERE
+(00:50:41) GOT HERE
+(00:50:41) GOT HERE
+(00:50:41) GOT HERE
+(00:50:41) GOT HERE
+(00:50:41) GOT HERE
+(00:50:41) GOT HERE
+(00:50:41) GOT HERE
+(00:50:41) GOT HERE
+(00:50:41) GOT HERE
+(00:50:42) GOT HERE
+(00:50:42) GOT HERE
+(00:50:42) GOT HERE
+(00:50:42) GOT HERE
+(00:50:42) GOT HERE
+(00:50:42) GOT HERE
+(00:50:42) GOT HERE
+(00:50:42) GOT HERE
+(00:50:43) GOT HERE
+(00:50:43) GOT HERE
+(00:50:43) GOT HERE
+(00:50:43) GOT HERE
+(00:50:43) GOT HERE
+(00:50:43) GOT HERE
+(00:50:43) GOT HERE
+(00:50:43) GOT HERE
+(00:50:44) GOT HERE
+(00:50:44) GOT HERE
+(00:50:44) GOT HERE
+(00:50:44) GOT HERE
+(00:50:44) GOT HERE
+(00:50:44) GOT HERE
+(00:50:44) GOT HERE
+(00:50:44) GOT HERE
+(00:50:44) GOT HERE
+(00:50:44) GOT HERE
+(00:50:45) GOT HERE
+(00:50:45) GOT HERE
+(00:50:45) GOT HERE
+(00:50:45) GOT HERE
+(00:50:45) GOT HERE
+(00:50:45) GOT HERE
+(00:50:45) GOT HERE
+(00:50:45) GOT HERE
+(00:50:46) GOT HERE
+(00:50:46) GOT HERE
+(00:50:46) GOT HERE
+(00:50:46) GOT HERE
+(00:50:46) GOT HERE
+(00:50:46) GOT HERE
+(00:50:46) GOT HERE
+(00:50:46) GOT HERE
+(00:50:46) GOT HERE
+(00:50:46) GOT HERE
+(00:50:47) GOT HERE
+(00:50:47) GOT HERE
+(00:50:47) GOT HERE
+(00:50:47) GOT HERE
+(00:50:47) GOT HERE
+(00:50:47) GOT HERE
+(00:50:47) GOT HERE
+(00:50:47) GOT HERE
+(00:50:48) GOT HERE
+(00:50:48) GOT HERE
+(00:50:48) GOT HERE
+(00:50:48) GOT HERE
+(00:50:48) GOT HERE
+(00:50:48) GOT HERE
+(00:50:48) GOT HERE
+(00:50:48) GOT HERE
+(00:50:48) GOT HERE
+(00:50:48) GOT HERE
+(00:50:49) GOT HERE
+(00:50:49) GOT HERE
+(00:50:49) GOT HERE
+(00:50:49) GOT HERE
+(00:50:49) GOT HERE
+(00:50:49) GOT HERE
+(00:50:49) GOT HERE
+(00:50:49) GOT HERE
+(00:50:50) GOT HERE
+(00:50:50) GOT HERE
+(00:50:50) GOT HERE
+(00:50:50) GOT HERE
+(00:50:50) GOT HERE
+(00:50:50) GOT HERE
+(00:50:50) GOT HERE
+(00:50:50) GOT HERE
+(00:50:50) GOT HERE
+(00:50:50) GOT HERE
+(00:50:51) GOT HERE
+(00:50:51) GOT HERE
+(00:50:51) GOT HERE
+(00:50:51) GOT HERE
+(00:50:51) GOT HERE
+(00:50:51) GOT HERE
+(00:50:51) GOT HERE
+(00:50:51) GOT HERE
+(00:50:52) GOT HERE
+(00:50:52) GOT HERE
+(00:50:52) GOT HERE
+(00:50:52) GOT HERE
+(00:50:52) GOT HERE
+(00:50:52) GOT HERE
+(00:50:52) GOT HERE
+(00:50:52) GOT HERE
+(00:50:52) GOT HERE
+(00:50:52) GOT HERE
+(00:50:53) GOT HERE
+(00:50:53) GOT HERE
+(00:50:53) GOT HERE
+(00:50:53) GOT HERE
+(00:50:53) GOT HERE
+(00:50:53) GOT HERE
+(00:50:53) GOT HERE
+(00:50:53) GOT HERE
+(00:50:54) GOT HERE
+(00:50:54) GOT HERE
+(00:50:54) GOT HERE
+(00:50:54) GOT HERE
+(00:50:54) GOT HERE
+(00:50:54) GOT HERE
+(00:50:54) GOT HERE
+(00:50:54) GOT HERE
+(00:50:54) GOT HERE
+(00:50:55) GOT HERE
+(00:50:55) GOT HERE
+(00:50:55) GOT HERE
+(00:50:55) GOT HERE
+(00:50:55) GOT HERE
+(00:50:55) GOT HERE
+(00:50:55) GOT HERE
+(00:50:55) GOT HERE
+(00:50:55) GOT HERE
+(01:22:46) Starting Server
+(01:22:46) LOADED: server.properties
+(01:22:46) SAVED: server.properties
+(01:23:00) Starting Server
+(01:23:00) LOADED: server.properties
+(01:23:00) SAVED: server.properties
+(01:23:02) Finished setting up server
+(01:23:02) Level initialized
+(01:23:02) URL: http://www.classicube.net/server/play/7b39c3c6e05af7bd21b9592c1e35b336/
+(01:23:02) LOADED: command.properties
+(01:23:02) LOADED: portals.db
+(01:23:02) autoload.txt does not exist
+(01:23:02) Creating listening socket on port 25565... 
+(01:23:02) Done.
+(01:23:16) 192.168.0.1 connected.
+(01:23:16) New Connection
+(01:23:16) 192.168.0.1 logging in as Marvy.
+(01:23:20) Marvy used /red 
+(01:23:27) Marvy disconnected.
+(01:24:49) Starting Server
+(01:24:49) LOADED: server.properties
+(01:24:49) SAVED: server.properties
+(01:24:51) Finished setting up server
+(01:24:51) Level initialized
+(01:24:51) URL: http://www.classicube.net/server/play/7b39c3c6e05af7bd21b9592c1e35b336/
+(01:24:51) LOADED: command.properties
+(01:24:51) LOADED: portals.db
+(01:24:51) autoload.txt does not exist
+(01:24:51) Creating listening socket on port 25565... 
+(01:24:51) Done.
+(01:25:07) 192.168.0.1 connected.
+(01:25:07) New Connection
+(01:25:07) 192.168.0.1 logging in as Marvy.
+(01:25:32) Marvy used /red 
+(01:25:51) Marvy disconnected.
+(01:27:06) Starting Server
+(01:27:06) LOADED: server.properties
+(01:27:06) SAVED: server.properties
+(01:27:08) Finished setting up server
+(01:27:08) Level initialized
+(01:27:08) URL: http://www.classicube.net/server/play/7b39c3c6e05af7bd21b9592c1e35b336/
+(01:27:08) LOADED: command.properties
+(01:27:08) LOADED: portals.db
+(01:27:08) autoload.txt does not exist
+(01:27:08) Creating listening socket on port 25565... 
+(01:27:08) Done.
+(01:27:25) 192.168.0.1 connected.
+(01:27:25) New Connection
+(01:27:25) 192.168.0.1 logging in as Marvy.
+(01:27:29) Marvy used /red 
+(01:27:46) Marvy disconnected.
+(01:31:42) Starting Server
+(01:31:42) LOADED: server.properties
+(01:31:42) SAVED: server.properties
+(01:31:43) Finished setting up server
+(01:31:43) Level initialized
+(01:31:43) URL: http://www.classicube.net/server/play/7b39c3c6e05af7bd21b9592c1e35b336/
+(01:31:43) LOADED: command.properties
+(01:31:43) LOADED: portals.db
+(01:31:43) autoload.txt does not exist
+(01:31:43) Creating listening socket on port 25565... 
+(01:31:43) Done.
+(01:31:55) 192.168.0.1 connected.
+(01:31:55) New Connection
+(01:31:55) 192.168.0.1 logging in as Marvy.
+(01:31:59) Marvy used /red 
+(01:32:10) Marvy used /cuboid cyan
+(01:32:15) Marvy disconnected.
+(01:33:26) Starting Server
+(01:33:26) LOADED: server.properties
+(01:33:26) SAVED: server.properties
+(01:33:27) Finished setting up server
+(01:33:27) Level initialized
+(01:33:27) URL: http://www.classicube.net/server/play/7b39c3c6e05af7bd21b9592c1e35b336/
+(01:33:27) LOADED: command.properties
+(01:33:27) LOADED: portals.db
+(01:33:27) autoload.txt does not exist
+(01:33:28) Creating listening socket on port 25565... 
+(01:33:28) Done.
+(01:33:41) 192.168.0.1 connected.
+(01:33:41) New Connection
+(01:33:42) 192.168.0.1 logging in as Marvy.
+(01:33:44) Marvy used /red 
+(01:34:54) Marvy disconnected.
+(01:36:42) Starting Server
+(01:36:42) LOADED: server.properties
+(01:36:42) SAVED: server.properties
+(01:36:44) Finished setting up server
+(01:36:44) Level initialized
+(01:36:44) URL: http://www.classicube.net/server/play/7b39c3c6e05af7bd21b9592c1e35b336/
+(01:36:44) LOADED: command.properties
+(01:36:44) LOADED: portals.db
+(01:36:44) autoload.txt does not exist
+(01:36:44) Creating listening socket on port 25565... 
+(01:36:44) Done.
+(01:37:00) 192.168.0.1 connected.
+(01:37:00) New Connection
+(01:37:00) 192.168.0.1 logging in as Marvy.
+(01:37:06) Marvy used /red 
+(01:38:33) Marvy used /save 
+(01:38:33) SAVED: Level "main". 1/12
+(01:38:33) And backed up
+(01:38:39) Marvy disconnected.
+(01:40:08) Starting Server
+(01:40:08) LOADED: server.properties
+(01:40:08) SAVED: server.properties
+(01:40:10) Finished setting up server
+(01:40:10) Level initialized
+(01:40:10) URL: http://www.classicube.net/server/play/7b39c3c6e05af7bd21b9592c1e35b336/
+(01:40:10) LOADED: command.properties
+(01:40:10) LOADED: portals.db
+(01:40:10) autoload.txt does not exist
+(01:40:10) Creating listening socket on port 25565... 
+(01:40:10) Done.
+(01:40:41) Starting Server
+(01:40:41) LOADED: server.properties
+(01:40:41) SAVED: server.properties
+(01:40:42) Finished setting up server
+(01:40:42) Level initialized
+(01:40:42) URL: http://www.classicube.net/server/play/7b39c3c6e05af7bd21b9592c1e35b336/
+(01:40:42) Added CommandAllowance: defuse = 0
+(01:40:42) LOADED: command.properties
+(01:40:42) LOADED: portals.db
+(01:40:42) autoload.txt does not exist
+(01:40:42) Creating listening socket on port 25565... 
+(01:40:42) Done.
+(01:40:59) 192.168.0.1 connected.
+(01:40:59) New Connection
+(01:40:59) 192.168.0.1 logging in as Marvy.
+(01:41:02) Marvy used /red 
+(01:41:16) Marvy used /defuse 
+(01:41:44) Marvy disconnected.
+(01:42:48) Starting Server
+(01:42:48) LOADED: server.properties
+(01:42:48) SAVED: server.properties
+(01:42:50) Finished setting up server
+(01:42:50) Level initialized
+(01:42:50) URL: http://www.classicube.net/server/play/7b39c3c6e05af7bd21b9592c1e35b336/
+(01:42:50) LOADED: command.properties
+(01:42:50) LOADED: portals.db
+(01:42:50) autoload.txt does not exist
+(01:42:50) Creating listening socket on port 25565... 
+(01:42:50) Done.
+(01:43:02) 192.168.0.1 connected.
+(01:43:02) New Connection
+(01:43:02) 192.168.0.1 logging in as Marvy.
+(01:43:06) Marvy used /red 
+(01:43:41) Marvy disconnected.
+(01:46:00) Starting Server
+(01:46:00) LOADED: server.properties
+(01:46:00) SAVED: server.properties
+(01:46:01) Finished setting up server
+(01:46:01) Level initialized
+(01:46:01) URL: http://www.classicube.net/server/play/7b39c3c6e05af7bd21b9592c1e35b336/
+(01:46:01) LOADED: command.properties
+(01:46:01) LOADED: portals.db
+(01:46:02) autoload.txt does not exist
+(01:46:02) Creating listening socket on port 25565... 
+(01:46:02) Done.
+(01:46:15) 192.168.0.1 connected.
+(01:46:15) New Connection
+(01:46:15) 192.168.0.1 logging in as Marvy.
+(01:46:18) Marvy used /red 
+(01:47:04) Marvy used /paint 
+(01:47:12) Marvy used /blue 
+(01:47:26) Marvy used /paint 
+(01:47:32) Marvy used /paint 
+(01:47:36) Marvy used /paint 
+(01:47:38) Marvy used /drop 
+(01:48:30) Marvy used /setrank marvy guest
+(01:48:36) Marvy disconnected.
+(01:48:47) Starting Server
+(01:48:47) LOADED: server.properties
+(01:48:47) SAVED: server.properties
+(01:48:49) Finished setting up server
+(01:48:49) Level initialized
+(01:48:49) URL: http://www.classicube.net/server/play/7b39c3c6e05af7bd21b9592c1e35b336/
+(01:48:49) LOADED: command.properties
+(01:48:49) LOADED: portals.db
+(01:48:49) autoload.txt does not exist
+(01:48:49) Creating listening socket on port 25565... 
+(01:48:49) Done.
+(01:49:29) Starting Server
+(01:49:29) LOADED: server.properties
+(01:49:29) SAVED: server.properties
+(01:49:31) Finished setting up server
+(01:49:31) Level initialized
+(01:49:31) URL: http://www.classicube.net/server/play/7b39c3c6e05af7bd21b9592c1e35b336/
+(01:49:31) LOADED: command.properties
+(01:49:31) LOADED: portals.db
+(01:49:31) autoload.txt does not exist
+(01:49:31) Creating listening socket on port 25565... 
+(01:49:31) Done.
+(01:49:55) 192.168.0.1 connected.
+(01:49:55) New Connection
+(01:49:55) 192.168.0.1 logging in as Marvy.
+(01:50:00) Marvy used /red 
+(01:51:47) 192.168.0.1 connected.
+(01:51:47) New Connection
+(01:51:47) 192.168.0.1 logging in as HeroCane.
+(01:51:52) HeroCane used /blue 
+(01:52:19) Marvy used /perbuild guest
+(01:52:19) main build permission changed to guest.
+(01:56:12) Marvy used /blue 
+(01:56:39) Marvy used /red 
+(01:56:43) Marvy used /blue 
+(01:57:37) Level initialized
+(01:57:43) HeroCane used /red 
+(01:58:55) <HeroCane> asdfas
+(01:58:56) <HeroCane> a
+(01:58:59) <HeroCane> gasdfasgaerhaerg
+(02:00:05) Starting Server
+(02:00:05) LOADED: server.properties
+(02:00:05) SAVED: server.properties
+(02:02:40) Starting Server
+(02:02:40) LOADED: server.properties
+(02:02:40) SAVED: server.properties
+(02:02:42) Finished setting up server
+(02:02:42) Level initialized
+(02:02:42) URL: http://www.classicube.net/server/play/7b39c3c6e05af7bd21b9592c1e35b336/
+(02:02:42) LOADED: command.properties
+(02:02:42) LOADED: portals.db
+(02:02:42) autoload.txt does not exist
+(02:02:42) Creating listening socket on port 25565... 
+(02:02:42) Done.
+(03:48:13) 128.61.82.200 connected.
+(03:48:13) New Connection
+(03:48:13) 128.61.82.200 logging in as ashx0206.
+(03:48:25) ashx0206 used /info 
+(03:48:32) ashx0206 used /help 
+(03:48:44) ashx0206 used /help all
+(03:48:51) ashx0206 used /defuse 
+(03:48:59) ashx0206 used /red 
+(03:51:28) ashx0206 used /levels 
+(03:51:41) Level initialized
+(03:52:25) ashx0206 disconnected.
+(03:55:13) Level unchanged, skipping backup...
+(03:55:13) Level unchanged, skipping backup...
+(04:32:43) Level unchanged, skipping backup...
+(04:32:43) Level unchanged, skipping backup...
+(05:10:13) Level unchanged, skipping backup...
+(05:10:13) Level unchanged, skipping backup...
+(05:47:43) Level unchanged, skipping backup...
+(05:47:43) Level unchanged, skipping backup...
+(06:25:13) Level unchanged, skipping backup...
+(06:25:13) Level unchanged, skipping backup...
+(07:02:43) Level unchanged, skipping backup...
+(07:02:43) Level unchanged, skipping backup...
+(07:40:14) Level unchanged, skipping backup...
+(07:40:14) Level unchanged, skipping backup...
+(08:17:44) Level unchanged, skipping backup...
+(08:17:44) Level unchanged, skipping backup...
+(08:55:14) Level unchanged, skipping backup...
+(08:55:14) Level unchanged, skipping backup...
+(09:20:10) 192.168.0.1 connected.
+(09:20:10) New Connection
+(09:20:10) 192.168.0.1 logging in as HeroCane.
+(09:20:17) HeroCane used /info 
+(09:20:31) HeroCane used /help 
+(09:20:34) HeroCane used /help all
+(09:25:17) HeroCane used /red 
+(09:25:38) HeroCane used /red 
+(09:25:40) HeroCane used /blue 
+(09:25:49) HeroCane used /red spawn
+(09:25:54) HeroCane disconnected.
+(09:32:03) 192.168.0.1 connected.
+(09:32:03) New Connection
+(09:32:03) 192.168.0.1 logging in as HeroCane.
+(09:32:16) HeroCane used /goto ctf_bridge
+(09:32:19) HeroCane used /red 
+(09:32:44) Level unchanged, skipping backup...
+(09:32:44) Level unchanged, skipping backup...
+(09:33:21) <HeroCane> 2
+(09:35:14) SAVED: Level "ctf_bridge". 1/12
+(09:35:14) And backed up
+(09:35:47) <HeroCane> 1
+(12:09:37) Starting Server
+(12:09:37) LOADED: server.properties
+(12:09:37) SAVED: server.properties
+(12:09:39) Finished setting up server
+(12:09:39) Level initialized
+(12:09:39) URL: http://www.classicube.net/server/play/7b39c3c6e05af7bd21b9592c1e35b336/
+(12:09:39) LOADED: command.properties
+(12:09:39) LOADED: portals.db
+(12:09:39) autoload.txt does not exist
+(12:09:39) Creating listening socket on port 25565... 
+(12:09:39) Done.
+(12:10:29) 192.168.0.1 connected.
+(12:10:29) New Connection
+(12:10:29) 192.168.0.1 logging in as HeroCane.
+(12:10:40) HeroCane used /red 
+(12:11:09) HeroCane disconnected.
+(12:13:15) Starting Server
+(12:13:15) LOADED: server.properties
+(12:13:15) SAVED: server.properties
+(12:13:17) Finished setting up server
+(12:13:17) Level initialized
+(12:13:17) URL: http://www.classicube.net/server/play/7b39c3c6e05af7bd21b9592c1e35b336/
+(12:13:17) LOADED: command.properties
+(12:13:17) LOADED: portals.db
+(12:13:17) autoload.txt does not exist
+(12:13:17) Creating listening socket on port 25565... 
+(12:13:17) Done.
+(12:13:32) 192.168.0.1 connected.
+(12:13:32) New Connection
+(12:13:32) 192.168.0.1 logging in as HeroCane.
+(12:13:37) HeroCane used /red 
+(12:13:58) <HeroCane> woo
+(12:16:57) 192.168.0.1 connected.
+(12:16:57) New Connection
+(12:16:58) 192.168.0.1 logging in as Marvy.
+(12:17:04) Marvy used /red 
+(12:17:09) Marvy used /blue 
+(12:18:15) Marvy used /drop 
+(12:19:33) Level initialized
+(12:20:07) Marvy used /mapinfo 
+(12:20:47) SAVED: Level "main". 2/12
+(12:20:47) And backed up
+(12:21:31) <Marvy> wat
+(12:22:35) <Marvy> nigga
+(12:22:51) HeroCane used /drop 
+(12:22:58) 69.244.191.202 connected.
+(12:22:58) New Connection
+(12:22:59) 69.244.191.202 logging in as DarkProKiller.
+(12:23:03) <Marvy> yo!
+(12:23:19) <DarkProKiller> hi hero
+(12:23:28) <HeroCane> join :D
+(12:23:34) <DarkProKiller> how u play
+(12:23:49) Marvy used /info 
+(12:23:53) Marvy used /whois marvy
+(12:23:56) Marvy disconnected.
+(12:23:59) <HeroCane> type /blue
+(12:24:04) <DarkProKiller> then wat
+(12:24:09) <HeroCane> ...?
+(12:24:12) <HeroCane> play...
+(12:24:16) <HeroCane> it's ctf
+(12:24:17) <DarkProKiller> XD
+(12:24:21) <HeroCane> pretty self explanatory
+(12:24:23) <DarkProKiller> theres no tnt
+(12:24:28) <HeroCane> there is
+(12:24:36) <DarkProKiller> really XD
+(12:24:41) <HeroCane> yeah
+(12:24:55) <DarkProKiller> does it expload on people :P
+(12:24:59) <HeroCane> I added mines but they're not working yet :)
+(12:25:04) <HeroCane> yess
+(12:25:10) <HeroCane> but you have to be on a team
+(12:25:13) <DarkProKiller> why i guest
+(12:25:34) DarkProKiller used /blue 
+(12:25:34) <HeroCane> that's what you are if you're not in a team
+(12:25:53) <DarkProKiller> where are u tho hero
+(12:26:03) <HeroCane> on the other side of the map, the red side
+(12:26:07) <HeroCane> im on yours now
+(12:26:18) <DarkProKiller> wat??
+(12:26:24) <DarkProKiller> i dont see u
+(12:26:25) <HeroCane> ohhhh
+(12:26:32) <HeroCane> yeah you joined the wrong map
+(12:26:36) <HeroCane> lemme fix that xD
+(12:26:45) <DarkProKiller> XD i spawned here
+(12:27:10) <DarkProKiller> N?A
+(12:27:15) <HeroCane> huh?
+(12:27:16) <DarkProKiller> N/A?
+(12:27:32) <HeroCane> did you do /3?
+(12:27:35) <DarkProKiller> can i be superop again
+(12:27:37) <DarkProKiller> yea
+(12:27:38) <HeroCane> sure
+(12:27:56) <HeroCane> oh, I forgot to make myself a superop...
+(12:28:02) <DarkProKiller> k XXD
+(12:28:43) <DarkProKiller> can we no hack PLZ
+(12:28:47) <HeroCane> I need to stop hacks..
+(12:28:50) <HeroCane> yeah xD
+(12:30:03) <DarkProKiller> no hacking!!!!
+(12:30:18) <DarkProKiller> plzz
+(12:30:23) <HeroCane> okay
+(12:30:52) <HeroCane> no hacking!
+(12:30:58) <DarkProKiller> oops forgot
+(12:32:02) <HeroCane> xD
+(12:32:26) <DarkProKiller> i quit bye
+(12:32:35) <DarkProKiller> imma play hunger games
+(12:32:38) <HeroCane> okay
+(12:33:06) <DarkProKiller> XD
+(12:33:56) <HeroCane> XD
+(12:34:53) <HeroCane> oops
+(12:34:57) <DarkProKiller> no blocks D:
+(12:34:59) <HeroCane> the perbuild is set to supero
+(12:35:01) <HeroCane> superop*
+(12:35:08) <HeroCane> hmmm
+(12:35:11) <DarkProKiller> do me superop
+(12:35:19) <HeroCane> I can't, not even I am superop xD
+(12:35:25) <HeroCane> I'd have to restart the server :P
+(12:35:26) <DarkProKiller> who is
+(12:35:36) <DarkProKiller> whos superop
+(12:35:37) <HeroCane> Marvy, my other account
+(12:35:47) SAVED: Level "ctf_bridge". 2/12
+(12:35:47) And backed up
+(12:36:03) <DarkProKiller> k bye
+(12:36:44) HeroCane kicked (You were kicked by [console]!).
+(12:37:00) DarkProKiller used /help kick
+(12:37:18) 192.168.0.1 connected.
+(12:37:18) New Connection
+(12:37:19) 192.168.0.1 logging in as Marvy.
+(12:37:19) Lately known as: herocane
+(12:37:28) <DarkProKiller> sup
+(12:37:33) <Marvy> yo
+(12:37:51) Marvy used /setrank darkprokiller superop
+(12:37:59) Marvy used /setrank darkprokiller operator
+(12:37:59) SAVED: Operator.txt
+(12:37:59) SAVED: Operator.txt
+(12:38:08) <DarkProKiller> :D
+(12:38:09) <Marvy> I can't set you to superop atm
+(12:38:19) Marvy used /blue 
+(12:38:27) <DarkProKiller> cant build tho
+(12:38:41) <Marvy> urrm
+(12:38:47) Marvy used /perbuild guest
+(12:38:47) main build permission changed to guest.
+(12:38:48) <DarkProKiller> red plzz
+(12:38:48) <Marvy> :D
+(12:38:51) Marvy used /red 
+(12:39:17) <Marvy> you're on the blue team?
+(12:39:27) <Marvy> why do you have a red name?!!!
+(12:39:32) <DarkProKiller> yeaw
+(12:39:40) <DarkProKiller> dont knowd
+(12:39:51) <DarkProKiller> XD
+(12:39:58) <Marvy> xD
+(12:40:07) <Marvy> right i'm going now
+(12:40:10) <Marvy> bya
+(12:40:18) <DarkProKiller> me too
+(12:40:26) Marvy disconnected.
+(12:47:22) Starting Server
+(12:47:22) LOADED: server.properties
+(12:47:22) SAVED: server.properties
+(12:47:24) Finished setting up server
+(12:47:24) Level initialized
+(12:47:24) URL: http://www.classicube.net/server/play/7b39c3c6e05af7bd21b9592c1e35b336/
+(12:47:24) LOADED: command.properties
+(12:47:24) LOADED: portals.db
+(12:47:24) autoload.txt does not exist
+(12:47:24) Creating listening socket on port 25565... 
+(12:47:24) Done.
+(12:47:37) 192.168.0.1 connected.
+(12:47:37) New Connection
+(12:47:37) 192.168.0.1 logging in as Marvy.
+(12:47:50) Marvy used /red 
+(12:49:01) 192.168.0.1 connected.
+(12:49:01) New Connection
+(12:49:01) 192.168.0.1 logging in as HeroCane.
+(12:49:16) <HeroCane> players
+(12:49:18) HeroCane used /players 
+(12:49:27) HeroCane used /blue 
+(12:49:29) HeroCane used /players 
+(12:49:57) Marvy used /drop 
+(12:50:33) Marvy disconnected.
+(12:50:43) <HeroCane> waat
+(13:28:24) <HeroCane> woo
+(13:28:26) HeroCane used /players 
+(13:29:46) HeroCane disconnected.
+(14:09:43) Starting Server
+(14:09:44) LOADED: server.properties
+(14:09:44) SAVED: server.properties
+(14:09:45) Finished setting up server
+(14:09:45) Level initialized
+(14:09:45) URL: http://www.classicube.net/server/play/7b39c3c6e05af7bd21b9592c1e35b336/
+(14:09:45) Added CommandAllowance: replaceall = 80
+(14:09:45) LOADED: command.properties
+(14:09:45) LOADED: portals.db
+(14:09:45) autoload.txt does not exist
+(14:09:45) Creating listening socket on port 25565... 
+(14:09:45) Done.
+(14:11:35) 192.168.0.1 connected.
+(14:11:36) New Connection
+(14:11:36) 192.168.0.1 logging in as HeroCane.
+(14:12:31) HeroCane used /red 
+(14:14:29) HeroCane disconnected.
+(14:14:51) 192.168.0.1 connected.
+(14:14:51) New Connection
+(14:14:51) 192.168.0.1 logging in as Marvy.
+(14:14:56) Marvy used /red 
+(14:15:09) Marvy used /replaceall lightblue gold
+(14:15:14) Marvy used /replaceall blue gold
+(14:15:32) Marvy used /replaceall gold blue
+(14:16:36) Marvy used /blue 
+(14:16:46) Marvy disconnected.
+(14:19:24) Starting Server
+(14:19:24) LOADED: server.properties
+(14:19:24) SAVED: server.properties
+(14:19:25) Finished setting up server
+(14:19:25) Level initialized
+(14:19:25) URL: http://www.classicube.net/server/play/7b39c3c6e05af7bd21b9592c1e35b336/
+(14:19:26) LOADED: command.properties
+(14:19:26) LOADED: portals.db
+(14:19:26) autoload.txt does not exist
+(14:19:26) Creating listening socket on port 25565... 
+(14:19:26) Done.
+(14:19:39) 192.168.0.1 connected.
+(14:19:39) New Connection
+(14:19:39) 192.168.0.1 logging in as Marvy.
+(14:19:43) Marvy used /red 
+(14:19:45) Marvy used /blue 
+(14:19:54) Marvy used /red 
+(14:19:56) Marvy disconnected.
+(14:20:51) Starting Server
+(14:20:51) LOADED: server.properties
+(14:20:51) SAVED: server.properties
+(14:20:53) Finished setting up server
+(14:20:53) Level initialized
+(14:20:53) URL: http://www.classicube.net/server/play/7b39c3c6e05af7bd21b9592c1e35b336/
+(14:20:53) LOADED: command.properties
+(14:20:53) LOADED: portals.db
+(14:20:53) autoload.txt does not exist
+(14:20:53) Creating listening socket on port 25565... 
+(14:20:53) Done.
+(14:21:05) 192.168.0.1 connected.
+(14:21:05) New Connection
+(14:21:06) 192.168.0.1 logging in as Marvy.
+(14:21:32) Marvy used /red 
+(14:21:34) Marvy used /blue 
+(14:21:41) Marvy disconnected.
+(14:22:02) Starting Server
+(14:22:02) LOADED: server.properties
+(14:22:02) SAVED: server.properties
+(14:22:04) Finished setting up server
+(14:22:04) Level initialized
+(14:22:04) URL: http://www.classicube.net/server/play/7b39c3c6e05af7bd21b9592c1e35b336/
+(14:22:04) LOADED: command.properties
+(14:22:04) LOADED: portals.db
+(14:22:04) autoload.txt does not exist
+(14:22:04) Creating listening socket on port 25565... 
+(14:22:04) Done.
+(14:22:18) 192.168.0.1 connected.
+(14:22:18) New Connection
+(14:22:18) 192.168.0.1 logging in as Marvy.
+(14:22:21) Marvy used /red 
+(14:22:23) Marvy used /blue 
+(14:23:02) Marvy used /replaceall blue adminium
+(14:23:08) Marvy used /paint 
+(14:23:28) Marvy used /replaceall red adminium
+(14:25:01) Marvy used /paint 
+(14:25:06) Marvy used /paint 
+(14:27:19) Marvy used /replaceall grass adminium
+(14:27:29) Marvy used /cuboid adminium
+(14:27:49) Marvy used /replaceall grass adminium
+(14:28:12) Marvy used /paint 
+(14:29:01) Marvy used /save 
+(14:29:01) SAVED: Level "main". 1/12
+(14:29:01) And backed up
+(14:29:26) Marvy used /red 
+(14:30:21) Marvy used /replaceall gray white
+(14:30:28) Marvy used /replaceall darkgray white
+(14:30:34) Marvy used /replaceall grey white
+(14:30:43) Marvy used /replaceall darkgrey white
+(14:30:47) Marvy used /about 
+(14:30:54) Marvy used /replaceall black white
+(14:32:05) Marvy used /cuboid 
+(14:32:28) Marvy used /cuboid adminium
+(14:32:35) Marvy used /cuboid adminium
+(14:32:47) Marvy used /cuboid adminium
+(14:34:05) 192.168.0.1 connected.
+(14:34:05) New Connection
+(14:34:05) 192.168.0.1 logging in as HeroCane.
+(14:34:40) HeroCane used /blue 
+(14:34:43) HeroCane used /red 
+(14:34:45) HeroCane used /blue 
+(14:36:09) HeroCane disconnected.
+(14:36:19) Marvy disconnected.
+(14:39:09) Starting Server
+(14:39:09) LOADED: server.properties
+(14:39:09) SAVED: server.properties
+(14:39:11) Finished setting up server
+(14:39:11) Level initialized
+(14:39:11) URL: http://www.classicube.net/server/play/7b39c3c6e05af7bd21b9592c1e35b336/
+(14:39:11) LOADED: command.properties
+(14:39:11) LOADED: portals.db
+(14:39:11) autoload.txt does not exist
+(14:39:11) Creating listening socket on port 25565... 
+(14:39:11) Done.
+(14:39:40) 192.168.0.1 connected.
+(14:39:40) New Connection
+(14:39:40) 192.168.0.1 logging in as HeroCane.
+(14:39:45) HeroCane used /red 
+(14:40:46) HeroCane used /blue 
+(14:41:07) HeroCane disconnected.
+(16:13:07) Starting Server
+(16:13:07) LOADED: server.properties
+(16:13:07) SAVED: server.properties
+(16:13:08) Finished setting up server
+(16:13:08) Level initialized
+(16:13:08) URL: http://www.classicube.net/server/play/7b39c3c6e05af7bd21b9592c1e35b336/
+(16:13:08) LOADED: command.properties
+(16:13:08) LOADED: portals.db
+(16:13:08) autoload.txt does not exist
+(16:13:08) Creating listening socket on port 25565... 
+(16:13:09) Done.
+(16:14:09) Starting Server
+(16:14:09) LOADED: server.properties
+(16:14:09) SAVED: server.properties
+(16:14:11) Finished setting up server
+(16:14:11) Level initialized
+(16:14:11) URL: http://www.classicube.net/server/play/7b39c3c6e05af7bd21b9592c1e35b336/
+(16:14:11) LOADED: command.properties
+(16:14:11) LOADED: portals.db
+(16:14:11) autoload.txt does not exist
+(16:14:11) Creating listening socket on port 25565... 
+(16:14:11) Done.
+(16:20:06) Starting Server
+(16:20:06) LOADED: server.properties
+(16:20:06) SAVED: server.properties
+(16:20:07) Finished setting up server
+(16:20:07) Level initialized
+(16:20:07) URL: http://www.classicube.net/server/play/7b39c3c6e05af7bd21b9592c1e35b336/
+(16:20:08) LOADED: command.properties
+(16:20:08) LOADED: portals.db
+(16:20:08) autoload.txt does not exist
+(16:20:08) Creating listening socket on port 25565... 
+(16:20:08) Done.
+(16:20:20) 192.168.0.1 connected.
+(16:20:20) New Connection
+(16:20:20) --> HeroCane joined the game. (IP: 192.168.0.1)...
+(16:20:59) HeroCane used /red 
+(16:21:36) <Console> oh cunt
+(16:21:44) <Console> /help
+(16:21:46) <Console> afasdasdoj
+(16:23:13) Starting Server
+(16:23:14) LOADED: server.properties
+(16:23:14) SAVED: server.properties
+(16:23:15) Finished setting up server
+(16:23:15) Level initialized
+(16:23:15) URL: http://www.classicube.net/server/play/7b39c3c6e05af7bd21b9592c1e35b336/
+(16:23:15) LOADED: command.properties
+(16:23:15) LOADED: portals.db
+(16:23:15) autoload.txt does not exist
+(16:23:15) Creating listening socket on port 25565... 
+(16:23:15) Done.
+(16:24:06) Starting Server
+(16:24:07) LOADED: server.properties
+(16:24:07) SAVED: server.properties
+(16:24:08) Finished setting up server
+(16:24:08) Level initialized
+(16:24:08) URL: http://www.classicube.net/server/play/7b39c3c6e05af7bd21b9592c1e35b336/
+(16:24:08) LOADED: command.properties
+(16:24:08) LOADED: portals.db
+(16:24:08) autoload.txt does not exist
+(16:24:08) Creating listening socket on port 25565... 
+(16:24:08) Done.
+(16:24:46) 192.168.0.1 connected.
+(16:24:46) New Connection
+(16:24:46) --> HeroCane joined the game. (IP: 192.168.0.1)...
+(16:24:51) <HeroCane> woo
+(16:24:53) HeroCane used /red 
+(16:24:56) <HeroCane> derp
+(16:25:55) 192.168.0.1 connected.
+(16:25:55) New Connection
+(16:25:55) --> Marvy joined the game. (IP: 192.168.0.1)...
+(16:26:03) Marvy used /blue 
+(16:32:47) <-- Marvy left the game.
+(16:32:52) <-- HeroCane left the game.
+(16:38:39) Starting Server
+(16:38:39) LOADED: server.properties
+(16:38:39) SAVED: server.properties
+(16:38:40) Finished setting up server
+(16:38:41) Level initialized
+(16:38:41) URL: http://www.classicube.net/server/play/7b39c3c6e05af7bd21b9592c1e35b336/
+(16:38:41) LOADED: command.properties
+(16:38:41) LOADED: portals.db
+(16:38:41) autoload.txt does not exist
+(16:38:41) Creating listening socket on port 25565... 
+(16:38:41) Done.
+(17:19:12) 192.168.0.1 connected.
+(17:19:12) New Connection
+(17:19:12) --> Marvy joined the game. (IP: 192.168.0.1)...
+(17:19:32) Marvy used /red 
+(17:19:37) Marvy used /blue 
+(17:19:39) Marvy used /blue 
+(17:19:41) Marvy used /red 
+(17:20:00) 192.168.0.1 connected.
+(17:20:00) New Connection
+(17:20:00) --> Marvy joined the game. (IP: 192.168.0.1)...
+(17:20:00) 192.168.0.1 kicked (Already logged in!).
+(17:20:50) 192.168.0.1 connected.
+(17:20:50) New Connection
+(17:20:50) --> HeroCane joined the game. (IP: 192.168.0.1)...
+(17:20:59) HeroCane used /red 
+(17:21:06) <HeroCane> woo
+(17:21:07) HeroCane used /blue 
+(17:21:09) HeroCane used /red 
+(17:21:11) HeroCane used /blue 
+(17:21:18) HeroCane used /red 
+(17:21:31) Marvy used /perbuild guest
+(17:21:31) main build permission changed to guest.
+(17:22:00) HeroCane used /blue 
+(17:22:27) <HeroCane> yeah nigga
+(17:23:04) HeroCane used /red 
+(17:23:17) HeroCane used /blue 
+(17:23:38) <-- HeroCane left the game.
+(17:23:40) <-- Marvy left the game.
+(17:25:36) Starting Server
+(17:25:36) LOADED: server.properties
+(17:25:36) SAVED: server.properties
+(17:25:38) Finished setting up server
+(17:25:38) Level initialized
+(17:25:38) URL: http://www.classicube.net/server/play/7b39c3c6e05af7bd21b9592c1e35b336/
+(17:25:38) LOADED: command.properties
+(17:25:38) LOADED: portals.db
+(17:25:38) autoload.txt does not exist
+(17:25:38) Creating listening socket on port 25565... 
+(17:25:38) Done.
+(17:26:53) 127.0.0.1 connected.
+(17:26:53) New Connection
+(17:26:53) --> Marvy joined the game. (IP: 127.0.0.1)...
+(17:27:06) <Marvy> derpina
+(17:27:08) Marvy used /help 
+(17:27:15) Marvy used /help all
+(17:27:22) Marvy used /help build
+(17:27:31) Marvy used /help other
+(17:28:02) <Marvy> wo
+(17:28:04) Marvy used /red 
+(17:28:26) <-- Marvy left the game.

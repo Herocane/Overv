@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet type='text/xsl' href='_UpgradeReport_Files/UpgradeReport.xslt'?><UpgradeLog>
+<Properties><Property Name="Solution" Value="MCSharp">
+</Property><Property Name="Solution File" Value="C:\Users\Sam\Downloads\mcsharp-source\MCSharp.sln">
+</Property><Property Name="Date" Value="06 January 2014">
+</Property><Property Name="Time" Value="22:24">
+</Property></Properties><Event ErrorLevel="0" Project="MCSharp" Source="MCSharp\MCSharp.csproj" Description="Project converted successfully">
+</Event><Event ErrorLevel="3" Project="MCSharp" Source="MCSharp\MCSharp.csproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="MCSharp CLI" Source="MCSharp.CLI\MCSharp CLI.csproj" Description="Project converted successfully">
+</Event><Event ErrorLevel="3" Project="MCSharp CLI" Source="MCSharp.CLI\MCSharp CLI.csproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="MCSharp Gui" Source="MCSharp.Gui\MCSharp Gui.csproj" Description="Project converted successfully">
+</Event><Event ErrorLevel="3" Project="MCSharp Gui" Source="MCSharp.Gui\MCSharp Gui.csproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="" Source="MCSharp.sln" Description="Solution converted successfully">
+</Event><Event ErrorLevel="3" Project="" Source="MCSharp.sln" Description="Converted">
+</Event><Event ErrorLevel="0" Project="MCSharp" Source="MCSharp\MCSharp.csproj" Description="Scan complete: Upgrade not required for project files.">
+</Event><Event ErrorLevel="0" Project="MCSharp CLI" Source="MCSharp.CLI\MCSharp CLI.csproj" Description="Scan complete: Upgrade not required for project files.">
+</Event><Event ErrorLevel="0" Project="MCSharp Gui" Source="MCSharp.Gui\MCSharp Gui.csproj" Description="Scan complete: Upgrade not required for project files.">
+</Event></UpgradeLog>

@@ -1,0 +1,448 @@
+(22:25:59) Starting Server
+(22:25:59) SAVED: server.properties
+(22:26:01) mainlevel not found
+(22:26:01) URL: https://minecraft.net/classic/play/b026eed642f52fd90ff9fcb52f122703
+(22:26:01) Level initialized
+(22:26:01) FAILED TO INCREMENTAL BACKUP :main
+(22:26:01) SAVED: Level "main". 0/12
+(22:26:01) And backed up
+(22:26:01) CREATED NEW: ranks/banned.txt
+(22:26:01) CREATED NEW: ranks/banned-ip.txt
+(22:26:01) CREATED NEW: ranks/builders.txt
+(22:26:01) CREATED NEW: ranks/advbuilders.txt
+(22:26:01) CREATED NEW: ranks/operators.txt
+(22:26:01) CREATED NEW: ranks/uberOps.txt
+(22:26:01) CREATED NEW: ranks/bots.txt
+(22:26:01) CREATED NEW: ranks/../IRC_Controllers.txt
+(22:26:01) autoload.txt does not exist
+(22:26:01) Creating listening socket on port 25565... 
+(22:26:01) Done.
+(22:26:01) Backup 1 saved for main
+(22:28:53) Starting Server
+(22:28:53) LOADED: server.properties
+(22:28:53) SAVED: server.properties
+(22:28:55) Level initialized
+(22:28:55) URL: https://minecraft.net/classic/play/b026eed642f52fd90ff9fcb52f122703
+(22:28:55) autoload.txt does not exist
+(22:28:55) Creating listening socket on port 25565... 
+(22:28:55) Done.
+(22:28:55) Level unchanged, skipping backup
+(23:48:43) Starting Server
+(23:48:43) LOADED: server.properties
+(23:48:43) SAVED: server.properties
+(23:48:44) Finished setting up server
+(23:48:44) Level initialized
+(23:48:44) URL: https://minecraft.net/classic/play/b026eed642f52fd90ff9fcb52f122703
+(23:48:45) LOADED: portals.db
+(23:48:45) autoload.txt does not exist
+(23:48:45) Creating listening socket on port 25565... 
+(23:48:45) Done.
+(23:48:45) Level unchanged, skipping backup
+(23:49:49) Starting Server
+(23:49:49) LOADED: server.properties
+(23:49:49) SAVED: server.properties
+(23:49:51) Finished setting up server
+(23:49:51) Level initialized
+(23:49:51) URL: https://minecraft.net/classic/play/b026eed642f52fd90ff9fcb52f122703
+(23:49:51) LOADED: portals.db
+(23:49:51) autoload.txt does not exist
+(23:49:51) Creating listening socket on port 25565... 
+(23:49:51) Done.
+(23:49:51) Level unchanged, skipping backup
+(23:50:08) 127.0.0.1 connected.
+(23:50:08) New Connection
+(23:50:08) 127.0.0.1 logging in as Marvy.
+(23:50:11) Marvy uses /help 
+(23:50:15) Marvy uses /portal 
+(23:50:20) SAVED: portals.db
+(23:50:29) Marvy disconnected.
+(23:51:55) Starting Server
+(23:51:55) LOADED: server.properties
+(23:51:55) SAVED: server.properties
+(23:51:57) Finished setting up server
+(23:51:57) Level initialized
+(23:51:57) Error reporting to Minecraft
+(23:51:57) Error reporting to fList
+(23:51:57) LOADED: portals.db
+(23:51:57) autoload.txt does not exist
+(23:51:57) Creating listening socket on port 25565... 
+(23:51:57) Done.
+(23:51:57) Level unchanged, skipping backup
+(23:52:22) 127.0.0.1 connected.
+(23:52:22) New Connection
+(23:52:22) 127.0.0.1 logging in as Marvy.
+(23:52:28) Marvy uses /portal air
+(23:52:32) SAVED: portals.db
+(23:52:42) Marvy uses /portal water
+(23:52:44) SAVED: portals.db
+(23:52:53) Marvy disconnected.
+(23:53:14) Starting Server
+(23:53:14) LOADED: server.properties
+(23:53:14) SAVED: server.properties
+(23:54:51) Starting Server
+(23:54:51) LOADED: server.properties
+(23:54:51) SAVED: server.properties
+(23:54:52) Finished setting up server
+(23:54:52) Level initialized
+(23:54:52) URL: https://minecraft.net/classic/play/b026eed642f52fd90ff9fcb52f122703
+(23:54:53) LOADED: portals.db
+(23:54:53) autoload.txt does not exist
+(23:54:53) Creating listening socket on port 25565... 
+(23:54:53) Done.
+(23:54:53) Level unchanged, skipping backup
+(23:55:01) 127.0.0.1 connected.
+(23:55:01) New Connection
+(23:55:01) 127.0.0.1 logging in as Marvy.
+(23:55:01) GOT HERE
+(23:55:02) GOT HERE
+(23:55:02) GOT HERE
+(23:55:03) GOT HERE
+(23:55:03) GOT HERE
+(23:55:04) GOT HERE
+(23:55:04) GOT HERE
+(23:55:05) GOT HERE
+(23:55:05) GOT HERE
+(23:55:06) GOT HERE
+(23:55:06) GOT HERE
+(23:55:07) GOT HERE
+(23:55:07) GOT HERE
+(23:55:08) GOT HERE
+(23:55:08) GOT HERE
+(23:55:09) GOT HERE
+(23:55:09) GOT HERE
+(23:55:10) Marvy uses /portal water
+(23:55:10) GOT HERE
+(23:55:10) GOT HERE
+(23:55:11) GOT HERE
+(23:55:11) GOT HERE
+(23:55:12) GOT HERE
+(23:55:12) SAVED: portals.db
+(23:55:13) GOT HERE
+(23:55:13) GOT HERE
+(23:55:14) GOT HERE
+(23:55:14) GOT HERE
+(23:55:15) GOT HERE
+(23:55:15) GOT HERE
+(23:55:16) GOT HERE
+(23:55:16) GOT HERE
+(23:55:17) GOT HERE
+(23:55:17) GOT HERE
+(23:55:18) GOT HERE
+(23:55:18) GOT HERE
+(23:55:19) GOT HERE
+(23:55:19) GOT HERE
+(23:55:20) GOT HERE
+(23:55:20) GOT HERE
+(23:59:30) Starting Server
+(23:59:30) LOADED: server.properties
+(23:59:30) SAVED: server.properties
+(23:59:31) Finished setting up server
+(23:59:31) Level initialized
+(23:59:31) URL: https://minecraft.net/classic/play/b026eed642f52fd90ff9fcb52f122703
+(23:59:32) LOADED: portals.db
+(23:59:32) autoload.txt does not exist
+(23:59:32) Creating listening socket on port 25565... 
+(23:59:32) Done.
+(23:59:32) Level unchanged, skipping backup
+(23:59:42) 127.0.0.1 connected.
+(23:59:42) New Connection
+(23:59:42) 127.0.0.1 logging in as Marvy.
+(23:59:43) GOT HERE
+(23:59:43) NAME: air
+(23:59:43) GOT HERE
+(23:59:43) NAME: air
+(23:59:44) GOT HERE
+(23:59:44) NAME: air
+(23:59:44) GOT HERE
+(23:59:44) NAME: air
+(23:59:45) GOT HERE
+(23:59:45) NAME: air
+(23:59:45) GOT HERE
+(23:59:45) NAME: air
+(23:59:46) GOT HERE
+(23:59:46) NAME: air
+(23:59:46) GOT HERE
+(23:59:46) NAME: air
+(23:59:47) GOT HERE
+(23:59:47) NAME: air
+(23:59:47) GOT HERE
+(23:59:47) NAME: air
+(23:59:48) GOT HERE
+(23:59:48) NAME: air
+(23:59:49) GOT HERE
+(23:59:49) NAME: air
+(23:59:49) GOT HERE
+(23:59:49) NAME: air
+(23:59:50) GOT HERE
+(23:59:50) NAME: air
+(23:59:50) GOT HERE
+(23:59:50) NAME: air
+(23:59:51) GOT HERE
+(23:59:51) NAME: air
+(23:59:51) GOT HERE
+(23:59:51) NAME: air
+(23:59:52) GOT HERE
+(23:59:52) NAME: air
+(23:59:52) GOT HERE
+(23:59:52) NAME: air
+(23:59:53) GOT HERE
+(23:59:53) NAME: air
+(23:59:53) GOT HERE
+(23:59:53) NAME: air
+(23:59:54) GOT HERE
+(23:59:54) NAME: unknown
+(23:59:54) GOT HERE
+(23:59:54) NAME: unknown
+(23:59:55) GOT HERE
+(23:59:55) NAME: unknown
+(23:59:55) GOT HERE
+(23:59:55) NAME: unknown
+(23:59:56) GOT HERE
+(23:59:56) NAME: air
+(23:59:56) GOT HERE
+(23:59:56) NAME: air
+(23:59:57) GOT HERE
+(23:59:57) NAME: air
+(23:59:57) GOT HERE
+(23:59:57) NAME: air
+(23:59:58) GOT HERE
+(23:59:58) NAME: air
+(23:59:58) GOT HERE
+(23:59:58) NAME: air
+(23:59:59) GOT HERE
+(23:59:59) NAME: air
+(23:59:59) GOT HERE
+(23:59:59) NAME: air
+(00:00:00) GOT HERE
+(00:00:00) NAME: air
+(00:00:00) GOT HERE
+(00:00:00) NAME: air
+(00:00:01) GOT HERE
+(00:00:01) NAME: air
+(00:00:02) GOT HERE
+(00:00:02) NAME: air
+(00:00:02) GOT HERE
+(00:00:02) NAME: air
+(00:00:03) GOT HERE
+(00:00:03) NAME: air
+(00:00:03) GOT HERE
+(00:00:03) NAME: air
+(00:00:04) GOT HERE
+(00:00:04) NAME: air
+(00:00:04) GOT HERE
+(00:00:04) NAME: air
+(00:00:05) GOT HERE
+(00:00:05) NAME: air
+(00:00:05) GOT HERE
+(00:00:05) NAME: air
+(00:00:06) GOT HERE
+(00:00:06) NAME: air
+(00:00:06) GOT HERE
+(00:00:06) NAME: air
+(00:00:07) GOT HERE
+(00:00:07) NAME: air
+(00:00:07) GOT HERE
+(00:00:07) NAME: air
+(00:00:08) GOT HERE
+(00:00:08) NAME: air
+(00:00:08) GOT HERE
+(00:00:08) NAME: air
+(00:00:09) GOT HERE
+(00:00:09) NAME: air
+(00:00:09) GOT HERE
+(00:00:09) NAME: air
+(00:00:10) GOT HERE
+(00:00:10) NAME: air
+(00:00:10) GOT HERE
+(00:00:10) NAME: air
+(00:00:11) GOT HERE
+(00:00:11) NAME: air
+(00:00:11) GOT HERE
+(00:00:11) NAME: air
+(00:00:12) GOT HERE
+(00:00:12) NAME: air
+(00:00:12) GOT HERE
+(00:00:12) NAME: air
+(00:00:13) GOT HERE
+(00:00:13) NAME: air
+(00:00:13) GOT HERE
+(00:00:13) NAME: air
+(00:00:14) Marvy uses /portal water
+(00:00:14) GOT HERE
+(00:00:14) NAME: air
+(00:00:14) GOT HERE
+(00:00:15) NAME: air
+(00:00:15) GOT HERE
+(00:00:15) NAME: air
+(00:00:16) GOT HERE
+(00:00:16) NAME: air
+(00:00:16) GOT HERE
+(00:00:16) NAME: air
+(00:00:17) GOT HERE
+(00:00:17) NAME: air
+(00:00:17) GOT HERE
+(00:00:17) NAME: air
+(00:00:18) SAVED: portals.db
+(00:00:18) GOT HERE
+(00:00:18) NAME: air
+(00:00:18) GOT HERE
+(00:00:18) NAME: portal_water
+(00:00:19) GOT HERE
+(00:00:19) NAME: portal_water
+(00:00:19) GOT HERE
+(00:00:19) NAME: portal_water
+(00:00:20) GOT HERE
+(00:00:20) NAME: portal_water
+(00:00:20) GOT HERE
+(00:00:20) NAME: portal_water
+(00:00:21) GOT HERE
+(00:00:21) NAME: air
+(00:00:21) GOT HERE
+(00:00:21) NAME: air
+(00:00:22) GOT HERE
+(00:00:22) NAME: air
+(00:00:22) GOT HERE
+(00:00:22) NAME: air
+(00:00:23) GOT HERE
+(00:00:23) NAME: air
+(00:00:23) GOT HERE
+(00:00:23) NAME: air
+(00:00:24) GOT HERE
+(00:00:24) NAME: air
+(00:00:24) GOT HERE
+(00:00:24) NAME: portal_water
+(00:00:25) GOT HERE
+(00:00:25) NAME: portal_water
+(00:00:25) GOT HERE
+(00:00:25) NAME: portal_water
+(00:00:26) GOT HERE
+(00:00:26) NAME: portal_water
+(00:00:26) GOT HERE
+(00:00:27) NAME: portal_water
+(00:00:27) GOT HERE
+(00:00:27) NAME: portal_water
+(00:00:28) GOT HERE
+(00:00:28) NAME: portal_water
+(00:00:28) GOT HERE
+(00:00:28) NAME: portal_water
+(00:00:29) GOT HERE
+(00:00:29) NAME: portal_water
+(00:00:29) GOT HERE
+(00:00:29) NAME: portal_water
+(00:00:30) GOT HERE
+(00:00:30) NAME: portal_water
+(00:00:30) GOT HERE
+(00:00:30) NAME: portal_water
+(00:00:31) GOT HERE
+(00:00:31) NAME: air
+(00:00:31) GOT HERE
+(00:00:31) NAME: air
+(00:00:32) GOT HERE
+(00:00:32) NAME: portal_water
+(00:00:32) GOT HERE
+(00:00:32) NAME: portal_water
+(00:00:33) GOT HERE
+(00:00:33) NAME: portal_water
+(00:00:33) GOT HERE
+(00:00:33) NAME: air
+(00:00:34) GOT HERE
+(00:00:34) NAME: air
+(00:00:34) GOT HERE
+(00:00:34) NAME: air
+(00:00:35) GOT HERE
+(00:00:35) NAME: air
+(00:00:35) GOT HERE
+(00:00:35) NAME: air
+(00:00:36) GOT HERE
+(00:00:36) NAME: air
+(00:00:36) GOT HERE
+(00:00:36) NAME: air
+(00:00:37) GOT HERE
+(00:00:37) NAME: air
+(00:00:37) GOT HERE
+(00:00:37) NAME: air
+(00:00:38) GOT HERE
+(00:00:38) NAME: air
+(00:00:39) GOT HERE
+(00:00:39) NAME: air
+(00:00:39) GOT HERE
+(00:00:39) NAME: air
+(00:00:40) GOT HERE
+(00:00:40) NAME: air
+(00:00:40) GOT HERE
+(00:00:40) NAME: air
+(00:00:41) GOT HERE
+(00:00:41) NAME: air
+(00:00:41) GOT HERE
+(00:00:41) NAME: air
+(00:00:42) GOT HERE
+(00:00:42) NAME: air
+(00:00:42) GOT HERE
+(00:00:42) NAME: air
+(00:00:43) GOT HERE
+(00:00:43) NAME: air
+(00:00:43) GOT HERE
+(00:00:43) NAME: air
+(00:00:44) GOT HERE
+(00:00:44) NAME: air
+(00:00:44) GOT HERE
+(00:00:44) NAME: air
+(00:00:45) GOT HERE
+(00:00:45) NAME: air
+(00:00:45) GOT HERE
+(00:00:45) NAME: air
+(00:00:46) GOT HERE
+(00:00:46) NAME: air
+(00:00:46) GOT HERE
+(00:00:46) NAME: air
+(00:00:47) GOT HERE
+(00:00:47) NAME: air
+(00:00:47) GOT HERE
+(00:00:47) NAME: air
+(00:00:48) GOT HERE
+(00:00:48) NAME: air
+(00:00:48) GOT HERE
+(00:00:48) NAME: air
+(00:00:49) GOT HERE
+(00:00:49) NAME: air
+(00:00:49) GOT HERE
+(00:00:49) NAME: air
+(00:00:50) GOT HERE
+(00:00:50) NAME: air
+(00:00:50) GOT HERE
+(00:00:50) NAME: air
+(00:00:51) GOT HERE
+(00:00:51) NAME: air
+(00:00:51) GOT HERE
+(00:00:52) NAME: air
+(00:00:52) GOT HERE
+(00:00:52) NAME: air
+(00:00:53) GOT HERE
+(00:00:53) NAME: air
+(00:00:53) GOT HERE
+(00:00:53) NAME: air
+(00:00:54) GOT HERE
+(00:00:54) NAME: air
+(00:00:54) GOT HERE
+(00:00:54) NAME: air
+(00:00:55) GOT HERE
+(00:00:55) NAME: air
+(00:00:55) GOT HERE
+(00:00:55) NAME: air
+(00:00:56) GOT HERE
+(00:00:56) NAME: air
+(00:00:56) GOT HERE
+(00:00:56) NAME: air
+(00:00:57) GOT HERE
+(00:00:57) NAME: air
+(00:00:57) GOT HERE
+(00:00:57) NAME: air
+(00:00:58) GOT HERE
+(00:00:58) NAME: air
+(00:00:58) GOT HERE
+(00:00:58) NAME: air
+(00:00:59) GOT HERE
+(00:00:59) NAME: air
+(00:00:59) GOT HERE
+(00:00:59) NAME: air
+(00:01:00) Marvy disconnected.

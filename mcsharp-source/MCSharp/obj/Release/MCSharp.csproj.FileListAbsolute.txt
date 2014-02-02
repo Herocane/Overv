@@ -1,0 +1,4 @@
+C:\Users\Sam\Downloads\mcsharp-source\MCSharp\bin\Release\MCSharp.dll
+C:\Users\Sam\Downloads\mcsharp-source\MCSharp\bin\Release\Meebey.SmartIrc4net.dll
+C:\Users\Sam\Downloads\mcsharp-source\MCSharp\obj\Release\ResolveAssemblyReference.cache
+C:\Users\Sam\Downloads\mcsharp-source\MCSharp\obj\Release\MCSharp.dll

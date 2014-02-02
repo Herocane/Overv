@@ -1,0 +1,11 @@
+----07/01/2014 01:46:24 ----
+Type: NullReferenceException
+Source: MCSharp
+Message: Object reference not set to an instance of an object.
+Target: AddPlayer
+Trace:    at MCSharp.Team.AddPlayer(Player p)
+   at MCSharp.CmdRed.Use(Player p, String message)
+   at MCSharp.Player.HandleCommand(String cmd, String message)
+   at MCSharp.Player.HandleChat(Byte[] message)
+
+-------------------------

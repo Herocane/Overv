@@ -1,0 +1,66 @@
+(01:41:15) Starting Server
+(01:41:15) SAVED: server.properties
+(01:41:15) mainlevel not found
+(01:41:15) Level initialized
+(01:41:15) FAILED TO SAVE :main
+(01:41:15) FAILED TO SAVE :main
+(01:41:15) CREATED NEW: ranks/banned.txt
+(01:41:15) CREATED NEW: ranks/banned-ip.txt
+(01:41:15) CREATED NEW: ranks/builders.txt
+(01:41:15) CREATED NEW: ranks/advbuilders.txt
+(01:41:15) CREATED NEW: ranks/operators.txt
+(01:41:15) CREATED NEW: ranks/uberOps.txt
+(01:41:15) CREATED NEW: ranks/bots.txt
+(01:41:15) CREATED NEW: ranks/../IRC_Controllers.txt
+(01:41:15) LOADED: portals.db
+(01:41:15) autoload.txt does not exist
+(01:41:15) Creating listening socket on port 25565... 
+(01:41:15) Done.
+(01:41:16) URL: http://www.classicube.net/server/play/357d3f5152e5a934c0904eda8fabf5bf/
+(01:41:16) Backup 1 saved for main
+(01:41:50) Starting Server
+(01:41:50) LOADED: server.properties
+(01:41:50) SAVED: server.properties
+(01:41:50) Level initialized
+(01:41:50) LOADED: portals.db
+(01:41:50) autoload.txt does not exist
+(01:41:50) Creating listening socket on port 25565... 
+(01:41:50) Done.
+(01:41:50) URL: http://www.classicube.net/server/play/357d3f5152e5a934c0904eda8fabf5bf/
+(01:41:51) Setup CTF game
+(01:41:51) Finished setting up server
+(01:41:51) Level unchanged, skipping backup...
+(01:43:09) Starting Server
+(01:43:09) LOADED: server.properties
+(01:43:09) SAVED: server.properties
+(01:43:09) Level initialized
+(01:43:09) LOADED: portals.db
+(01:43:09) autoload.txt does not exist
+(01:43:09) Creating listening socket on port 25565... 
+(01:43:09) Done.
+(01:43:09) URL: http://www.classicube.net/server/play/357d3f5152e5a934c0904eda8fabf5bf/
+(01:43:10) Setup CTF game
+(01:43:10) Finished setting up server
+(01:43:10) Level unchanged, skipping backup...
+(01:45:07) 192.168.0.1 connected.
+(01:45:07) New Connection
+(01:45:08) 192.168.0.1 logging in as Marvy.
+(01:45:18) Marvy uses /help 
+(01:45:29) Marvy disconnected.
+(01:45:54) Starting Server
+(01:45:54) LOADED: server.properties
+(01:45:54) SAVED: server.properties
+(01:45:54) Level initialized
+(01:45:54) LOADED: portals.db
+(01:45:54) autoload.txt does not exist
+(01:45:54) Creating listening socket on port 25565... 
+(01:45:54) Done.
+(01:45:54) URL: http://www.classicube.net/server/play/357d3f5152e5a934c0904eda8fabf5bf/
+(01:45:55) Setup CTF game
+(01:45:55) Finished setting up server
+(01:45:55) Level unchanged, skipping backup...
+(01:46:17) 192.168.0.1 connected.
+(01:46:17) New Connection
+(01:46:17) 192.168.0.1 logging in as Marvy.
+(01:46:22) Marvy uses /help 
+(01:46:24) Marvy uses /red 
