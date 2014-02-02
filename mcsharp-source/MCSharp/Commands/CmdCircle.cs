@@ -87,13 +87,10 @@ namespace Overv
             unchecked { if (cpos.type != (byte)-1) { type = cpos.type; } }
             List<Pos> buffer = new List<Pos>();
 
-            if (Math.Abs(x - cpos.x) != Math.Abs(z - cpos.z)) { p.SendMessage("No good, make it a circle."); return; }
-
             float CenX = Middle(x , cpos.x);
             float CenZ = Middle(z , cpos.z);
             float Rad = Math.Abs(CenX - (float)x);
 
-            if (Rad != (int)Rad) { p.SendMessage("No good, try a diferent radius."); return; }
             switch (cpos.solid)
             {
                 case SolidType.solid:

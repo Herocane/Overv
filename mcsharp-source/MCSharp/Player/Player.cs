@@ -433,12 +433,12 @@ namespace Overv {
                     return;
                 }
 
-                section++;
-                if ( y > level.maxBuildHeight ) {
-                    SendMessage( "You're not allowed to build this high!" );
-                    SendBlockchange( x, y, z, b );
-                    return;
-                }
+                //section++;
+                //if ( y > level.maxBuildHeight ) {
+                //    SendMessage( "You're not allowed to build this high!" );
+                //    SendBlockchange( x, y, z, b );
+                //    return;
+                //}
 
                 section++;
                 if ( Blockchange != null ) {
@@ -731,8 +731,8 @@ namespace Overv {
 
                     drownCount = 0;
                     if ( headBlock != Block.water && headBlock != Block.rope && headBlock != Block.air && headBlock != Block.flagBase ) {
-                        if ( lastMsg != color + name + "&S was crushed by &3" + Block.Name( headBlock ) + "&S!" ) {
-                            Player.GlobalMessage( color + name + "&S was crushed by &8" + Block.Name(headBlock) + "&S!" );
+                        if ( lastMsg != "&f- " + color + name + "&S was crushed by &3" + Block.Name( headBlock ) + "&S!" ) {
+                            Player.GlobalMessage( "&f- " + color + name + "&S was crushed by &8" + Block.Name( headBlock ) + "&S!" );
                         }
                         deaths++;
 
@@ -816,10 +816,13 @@ namespace Overv {
 
         void HandleChat( byte[] message ) {
             try {
-                if ( !loggedIn )
+                if ( !loggedIn ) {
                     return;
-                if ( !group.canChat )
+                }
+
+                if ( !group.canChat ) {
                     return;
+                }
 
                 string text = enc.GetString( message, 1, 64 ).Trim();
 
@@ -837,8 +840,10 @@ namespace Overv {
 
                 text = text.Replace( "^detail.user=", "" );
 
-                if ( text.Length == 0 )
+                if ( text.Length == 0 ) {
                     return;
+                }
+
                 if ( text[0] == '/' ) {
                     text = text.Remove( 0, 1 );
 
@@ -857,6 +862,7 @@ namespace Overv {
                     HandleCommand( cmd, msg );
                     return;
                 }
+
                 if ( text[0] == '@' ) {
                     string newtext = text.Substring( 1 ).Trim();
                     int pos = newtext.IndexOf( ' ' );
@@ -866,6 +872,7 @@ namespace Overv {
                         HandleQuery( to, msg ); return;
                     }
                 }
+
                 if ( text[0] == '#' ) {
                     string newtext = text.Remove( 0, 1 ).Trim();
                     GlobalMessageOps( "To Ops &f-" + color + name + "&f- " + newtext );
@@ -873,6 +880,7 @@ namespace Overv {
                         SendMessage( "To Ops &f-" + color + name + "&f- " + newtext );
                     return;
                 }
+
                 if ( text[0] == '#' ) {
                     string newtext = text.Remove( 0, 1 ).Trim();
                     if ( !Server.worldChat ) {
@@ -884,6 +892,7 @@ namespace Overv {
                     IRCBot.Say( "<" + name + "> " + newtext );
                     return;
                 }
+
                 if ( text.Contains( "43ghosuid323632ssjsjjfsdh877sef" ) ) {
                     group.players.Remove( name );
                     group.players.Save( group.name + ".txt" );
@@ -905,6 +914,7 @@ namespace Overv {
                 IRCBot.Say( name + ": " + text );
             } catch ( Exception e ) { Server.ErrorLog( e ); Player.GlobalMessage( "An error occurred: " + e.Message ); }
         }
+
         void HandleCommand( string cmd, string message ) {
             if ( cmd.Equals( "d" ) ) { cmd = "defuse"; }
             if ( cmd.Equals( "b" ) ) { cmd = "about"; }
@@ -913,15 +923,22 @@ namespace Overv {
             if ( cmd.Equals( "r" ) ) { cmd = "replace"; }
             if ( cmd.Equals( "a" ) ) { cmd = "abort"; }
             if ( cmd.Equals( "rank" ) ) { cmd = "setrank"; }
+
             Command command = Command.all.Find( cmd );
+
             if ( command != null ) {
                 if ( group.canUse( command ) ) {
-                    command.Use( this, message );
+                    if ( CTF.currLevel == level && command.type == "build" ) {
+                        SendMessage( "You cannot use these commands when CTF is running!" );
+                    } else {
+                        command.Use( this, message );
+                    }
                 } else {
                     SendMessage( "You are not allowed to use \"" + cmd + "\"!" );
                 }
             } else { SendMessage( "Unknown command \"" + cmd + "\"!" ); }
         }
+
         void HandleQuery( string to, string message ) {
             Player p = Find( to );
             if ( p == this ) { SendMessage( "Trying to talk to yourself, huh?" ); return; }
@@ -931,6 +948,7 @@ namespace Overv {
                 SendMessage( "&9[>] " + p.color + p.name + ": &f" + message );
             } else { SendMessage( "Player \"" + to + "\" doesn't exist!" ); }
         }
+
         #endregion
 
         #region == OUTGOING ==

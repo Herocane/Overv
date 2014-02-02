@@ -85,12 +85,7 @@ namespace Overv
         {
             names = e.UserList;
         }
-        //void OnDisconnected(object sender, EventArgs e)
-        //{
-        //    try { irc.Connect(server, 6667); }
-        //    catch (Exception ex) { Console.WriteLine("Failed to reconnect to IRC"); }
-        //}
-        // On public channel message
+
         void OnChanMessage(object sender, IrcEventArgs e)
         {
 
@@ -132,7 +127,6 @@ namespace Overv
         }
         void OnPrivMsg(object sender, IrcEventArgs e)
         {
-            Server.s.Log("IRC RECIEVING MESSESGE");
             if (Server.ircControllers.Contains(e.Data.Nick))
             {
                 string cmd;

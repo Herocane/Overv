@@ -2,3 +2,7 @@ C:\Users\Sam\Downloads\mcsharp-source\MCSharp\bin\Release\Meebey.SmartIrc4net.dl
 C:\Users\Sam\Downloads\mcsharp-source\MCSharp\obj\Release\ResolveAssemblyReference.cache
 C:\Users\Sam\Downloads\mcsharp-source\MCSharp\bin\Release\Overv.dll
 C:\Users\Sam\Downloads\mcsharp-source\MCSharp\obj\Release\Overv.dll
+C:\Users\Sam\Documents\GitHub\Overv\mcsharp-source\MCSharp\bin\Release\Overv.dll
+C:\Users\Sam\Documents\GitHub\Overv\mcsharp-source\MCSharp\bin\Release\Meebey.SmartIrc4net.dll
+C:\Users\Sam\Documents\GitHub\Overv\mcsharp-source\MCSharp\obj\Release\ResolveAssemblyReference.cache
+C:\Users\Sam\Documents\GitHub\Overv\mcsharp-source\MCSharp\obj\Release\Overv.dll

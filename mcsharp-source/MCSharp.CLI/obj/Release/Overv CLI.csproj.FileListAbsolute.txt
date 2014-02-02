@@ -5,3 +5,10 @@ C:\Users\Sam\Downloads\mcsharp-source\MCSharp.CLI\bin\Release\Overv CLI.pdb
 C:\Users\Sam\Downloads\mcsharp-source\MCSharp.CLI\bin\Release\Overv.dll
 C:\Users\Sam\Downloads\mcsharp-source\MCSharp.CLI\obj\Release\Overv CLI.exe
 C:\Users\Sam\Downloads\mcsharp-source\MCSharp.CLI\obj\Release\Overv CLI.pdb
+C:\Users\Sam\Documents\GitHub\Overv\mcsharp-source\MCSharp.CLI\bin\Release\Overv CLI.exe
+C:\Users\Sam\Documents\GitHub\Overv\mcsharp-source\MCSharp.CLI\bin\Release\Overv CLI.pdb
+C:\Users\Sam\Documents\GitHub\Overv\mcsharp-source\MCSharp.CLI\bin\Release\Overv.dll
+C:\Users\Sam\Documents\GitHub\Overv\mcsharp-source\MCSharp.CLI\bin\Release\Meebey.SmartIrc4net.dll
+C:\Users\Sam\Documents\GitHub\Overv\mcsharp-source\MCSharp.CLI\obj\Release\ResolveAssemblyReference.cache
+C:\Users\Sam\Documents\GitHub\Overv\mcsharp-source\MCSharp.CLI\obj\Release\Overv CLI.exe
+C:\Users\Sam\Documents\GitHub\Overv\mcsharp-source\MCSharp.CLI\obj\Release\Overv CLI.pdb

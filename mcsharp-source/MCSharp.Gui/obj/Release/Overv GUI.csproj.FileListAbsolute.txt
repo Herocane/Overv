@@ -9,3 +9,14 @@ C:\Users\Sam\Downloads\mcsharp-source\MCSharp.Gui\obj\Release\Overv.Gui.Properti
 C:\Users\Sam\Downloads\mcsharp-source\MCSharp.Gui\obj\Release\Overv.Gui.Window.resources
 C:\Users\Sam\Downloads\mcsharp-source\MCSharp.Gui\obj\Release\Overv GUI.exe
 C:\Users\Sam\Downloads\mcsharp-source\MCSharp.Gui\obj\Release\Overv GUI.pdb
+C:\Users\Sam\Documents\GitHub\Overv\mcsharp-source\MCSharp.Gui\obj\Release\Overv GUI.exe
+C:\Users\Sam\Documents\GitHub\Overv\mcsharp-source\MCSharp.Gui\obj\Release\Overv GUI.pdb
+C:\Users\Sam\Documents\GitHub\Overv\mcsharp-source\MCSharp.Gui\bin\Release\Overv GUI.exe
+C:\Users\Sam\Documents\GitHub\Overv\mcsharp-source\MCSharp.Gui\bin\Release\Overv GUI.pdb
+C:\Users\Sam\Documents\GitHub\Overv\mcsharp-source\MCSharp.Gui\bin\Release\Overv.dll
+C:\Users\Sam\Documents\GitHub\Overv\mcsharp-source\MCSharp.Gui\bin\Release\Meebey.SmartIrc4net.dll
+C:\Users\Sam\Documents\GitHub\Overv\mcsharp-source\MCSharp.Gui\obj\Release\ResolveAssemblyReference.cache
+C:\Users\Sam\Documents\GitHub\Overv\mcsharp-source\MCSharp.Gui\obj\Release\Overv.Gui.Properties.Resources.resources
+C:\Users\Sam\Documents\GitHub\Overv\mcsharp-source\MCSharp.Gui\obj\Release\Overv.Gui.Window.resources
+C:\Users\Sam\Documents\GitHub\Overv\mcsharp-source\MCSharp.Gui\obj\Release\GenerateResource.read.1.tlog
+C:\Users\Sam\Documents\GitHub\Overv\mcsharp-source\MCSharp.Gui\obj\Release\GenerateResource.write.1.tlog

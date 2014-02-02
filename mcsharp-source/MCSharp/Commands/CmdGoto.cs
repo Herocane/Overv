@@ -18,7 +18,7 @@ namespace Overv {
 	public class CmdGoto : Command {
         public override string name { get { return "goto"; } }
         public override string type { get { return "mod"; } }
-        public override LevelPermission defaultPerm { get { return LevelPermission.Guest; } }
+        public override LevelPermission defaultPerm { get { return LevelPermission.AdvBuilder; } }
 		public CmdGoto() {  }
 		public override void Use(Player p,string message)  {
 			if (message == "") { Help(p); return; }

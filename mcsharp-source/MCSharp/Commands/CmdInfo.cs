@@ -22,11 +22,10 @@ namespace Overv {
 		public CmdInfo() {  }
 
         public override void Use( Player p, string message ) {
-            p.SendMessage( "=======  &aServer Info&S  ========" );
-            p.SendMessage( "Running on &cOverv&S by Marvy." );
+            p.SendMessage( "This server runs on &bOverv&S by Marvy, which is based off MCSharp." );
             p.SendMessage( "Score Limit: &a" + CTF.scoreLimit );
-            p.SendMessage( "&cRed Wins: &f" + CTF.redWins + " | &9Blue Wins: &f" + CTF.blueWins );
-            p.SendMessage( "==========================" );
+            p.SendMessage( "&cRed Victories: " + CTF.redWins + " | &9Blue Victories: " + CTF.blueWins );
+            p.SendMessage( "Players online: &a" + Player.players.Count + "/" + Server.players );
         }
 
         public override void Help( Player p ) {
