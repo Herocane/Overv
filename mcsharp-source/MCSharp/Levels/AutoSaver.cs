@@ -80,15 +80,15 @@ namespace Overv
 							string path = backupPath + "/" + l.name + "/" + backupNumber;
 							string previousBackup = backupPath + "/" + l.name + "/" + (backupNumber - 1);
 							Directory.CreateDirectory(path);
-							if (l.Backup(path))
-							{
-								foreach (Player p in Player.players)
-								{
-									if (p.level == l)
-										p.SendMessage("Backup " + backupNumber + " saved.");
-								}
-								Server.s.Log("Backup " + backupNumber + " saved for " + l.name);
-							}
+                            //if (l.Backup(path))
+                            //{
+                            //    foreach (Player p in Player.players)
+                            //    {
+                            //        if (p.level == l)
+                            //            p.SendMessage("Backup " + backupNumber + " saved.");
+                            //    }
+                            //    Server.s.Log("Backup " + backupNumber + " saved for " + l.name);
+                            //}
 						}
 					}
 					catch

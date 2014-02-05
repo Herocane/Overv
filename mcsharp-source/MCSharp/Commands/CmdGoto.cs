@@ -18,7 +18,7 @@ namespace Overv {
 	public class CmdGoto : Command {
         public override string name { get { return "goto"; } }
         public override string type { get { return "mod"; } }
-        public override LevelPermission defaultPerm { get { return LevelPermission.AdvBuilder; } }
+        public override LevelPermission defaultPerm { get { return LevelPermission.Guest; } }
 		public CmdGoto() {  }
 		public override void Use(Player p,string message)  {
 			if (message == "") { Help(p); return; }
@@ -29,6 +29,7 @@ namespace Overv {
 					if (p.level == level) { p.SendMessage("You are already in \""+level.name+"\"."); return; }
                     if (p.group.permission < level.permissionvisit) { p.SendMessage("Your not allowed to goto " + level.name + "."); return; }
                     p.Loading = true;
+
 					foreach (Player pl in Player.players) 
 					{
                         if ( p.level == pl.level && p != pl ) {
@@ -38,13 +39,7 @@ namespace Overv {
                             p.SendDeletePlayerName( pl.playerID );
                         }
 					}
-                    foreach (PlayerBot b in PlayerBot.playerbots)
-                    {
-                        if (p.level == b.level) 
-						{ 
-							p.SendDie(b.id); 
-						}       //Kills current bot list for player
-                    }
+
                     p.BlockAction = 0;
                     p.painting = false;
                     Player.GlobalDie(p,true);
@@ -72,17 +67,7 @@ namespace Overv {
                             p.SendAddPlayerName( pl.playerID, pl.color + pl.name, pl.name, pl.group.color + pl.group.name, (byte)pl.group.permission );
                         }
 					}
-                    foreach (PlayerBot b in PlayerBot.playerbots)   //Send bots to the player
-                    {
-                        if (b.level == p.level)
-                        { 
-							p.SendSpawn(b.id, b.color + b.name, b.pos[0], b.pos[1], b.pos[2], b.rot[0], b.rot[1]); 
-						}
-                    }
-                    //if (!p.hidden) 
-                    //{ 
-                    //    Player.GlobalChat(p, p.color + "*" + p.name + "&S went to &b" + level.name + ".", false); 
-                    //}
+
                     p.Loading = false;
                     try {
                         p.SendMessage( "This map's author: &b" + p.level.author );

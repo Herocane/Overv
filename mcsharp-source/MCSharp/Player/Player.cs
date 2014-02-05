@@ -681,11 +681,6 @@ namespace Overv {
             byte headBlock = level.GetTile( x, yh, z );
 
             switch ( footBlock ) {
-                case Block.portal_air:
-                case Block.portal_water:
-                case Block.portal_lava:
-                    CheckPortal( x, y, z );
-                    break;
                 case Block.flagBase:
                     CheckFlag();
                     break;
@@ -753,6 +748,11 @@ namespace Overv {
                                 return;
                             }
 
+                            if ( level.GetTile( p.placedMine.x, p.placedMine.y, p.placedMine.z ) != Block.darkgrey ) {
+                                p.placedMine.isActive = false;
+                                return;
+                            }
+
                             Player.GlobalMessage( "&f- " + color + name + "&S was exploded by " + p.color + p.name + "&S's mine!" );
                             p.killPlayer( this );
                             CTF.currLevel.Blockchange( p.placedMine.x, p.placedMine.y, p.placedMine.z, Block.air );
@@ -795,22 +795,6 @@ namespace Overv {
                         Player.GlobalMessage( "&f- " + color + name + "&S returned the " + team.color + team.name + "&S flag!" );
                     }
                 }
-            }
-        }
-
-        void CheckPortal( ushort x, ushort y, ushort z ) {
-            Portal foundPortal = null;
-            PortalDB.portals.ForEach( delegate( Portal p ) {
-                if ( p.entryLevel == level.name && p.entry[0] == x && p.entry[1] == y && p.entry[2] == z ) {
-                    foundPortal = p;
-                }
-            } );
-            if ( foundPortal != null ) {
-                if ( foundPortal.entryLevel != foundPortal.exitLevel ) {
-                    Command.all.Find( "goto" ).Use( this, foundPortal.exitLevel );
-                    while ( Loading ) { }
-                }
-                Command.all.Find( "move" ).Use( null, name + " " + foundPortal.exit[0] + " " + foundPortal.exit[1] + " " + foundPortal.exit[2] );
             }
         }
 

@@ -170,7 +170,6 @@ namespace Overv {
                 Command.Load();
                 Group.Load();
                 Group.LoadCommands();
-                PortalDB.Load();
                 CTF.redTeam = new Team( "&c", Block.red );
                 CTF.blueTeam = new Team( "&9", Block.deepblue );
                 CTF.Setup(Server.mainLevel, true);
@@ -237,7 +236,6 @@ namespace Overv {
             ml.Queue( delegate {
                 updateTimer.Elapsed += delegate {
                     Player.GlobalUpdate();
-                    PlayerBot.GlobalUpdatePosition();
                 };
 
                 updateTimer.Start();

@@ -28,7 +28,6 @@ namespace Overv {
                 if ( level.name.ToLower() == message.ToLower() ) {
                     if ( level == Server.mainLevel ) { p.SendMessage( "You can't unload the main level." ); return; }
                     Player.players.ForEach( delegate( Player pl ) { if ( pl.level == level ) { Player.GlobalDie( pl, true ); } } );
-                    PlayerBot.playerbots.ForEach( delegate( PlayerBot b ) { if ( b.level == level ) { b.GlobalDie(); } } );       //destroy any bots on the level
                     Player.players.ForEach( delegate( Player pl ) { if ( pl.level == level ) { pl.SendMotd(); } } );
 
                     ushort x = (ushort)( ( 0.5 + Server.mainLevel.spawnx ) * 32 );

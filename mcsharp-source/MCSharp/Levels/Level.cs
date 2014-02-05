@@ -23,8 +23,7 @@ using System.IO.Compression;
 
 namespace Overv
 {
-    public enum LevelPermission
-    {
+    public enum LevelPermission {
         Griefer = -10,
         Guest = 0,
         Builder = 30,
@@ -32,7 +31,7 @@ namespace Overv
         Operator = 80,
         Admin = 100,
         Null = 150
-	}
+    }
 
 	public class Level
     {
@@ -81,7 +80,6 @@ namespace Overv
 
             name = n; blocks = new byte[width * depth * height];
 
-
             switch ( type ) {
                 case "flat":
                 case "pixel":
@@ -91,10 +89,8 @@ namespace Overv
                             for ( y = 0; y < depth; ++y ) {
                                 switch ( type ) {
                                     case "flat":
-                                        if ( y != half ) {
-                                            SetTile( x, y, z, (byte)( ( y >= half ) ? Block.air : Block.dirt ) );
-                                        } else {
-                                            SetTile( x, y, z, Block.grass );
+                                        if ( getCircle( (ushort)(x - 32), (ushort)(y - 32), (ushort)(z - 32) ) == 1 ) {
+                                            SetTile( x, y, z, Block.stone );
                                         }
                                         break;
                                     case "pixel":
@@ -125,10 +121,12 @@ namespace Overv
             spawnx = (ushort)(width / 2);
             spawny = (ushort)(depth * 0.75f);
             spawnz = (ushort)(height / 2);
-            rotx = 0; 
+            rotx = 0;
             roty = 0;
+        }
 
-            Backup("levels/backups/" + name + "/1");
+        public int getCircle( ushort x, ushort y, ushort z ) {
+            return ( ((x * x) + (y * y) + (z * z)) < 20 * 20 ) ? 1 : 0;
         }
 
         public byte GetTile(ushort x, ushort y, ushort z)
@@ -290,29 +288,6 @@ namespace Overv
             sw.Flush();
             sw.Close();
             sw.Dispose();
-        }
-
-        public bool Backup( string path ) {
-            if ( !backedup ) {
-                string BackPath = path + "/" + name + ".lvl";
-                string current = "levels/" + name + ".lvl";
-                try {
-                retry:
-                    if ( File.Exists( current ) ) {
-                        File.Copy( current, BackPath, true );
-                        backedup = true;
-                    } else {
-                        //Save();
-                        goto retry;
-                    }
-                    return true;
-                } catch {
-                    return false;
-                }
-            } else {
-                Server.s.Log( "Level unchanged, skipping backup..." );
-                return false;
-            }
         }
 
         public static Level Load(string name){ 

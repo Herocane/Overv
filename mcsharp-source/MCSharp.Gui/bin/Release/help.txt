@@ -1,0 +1,4 @@
+(This message is customisable in help.txt!)
+Run to the other side and walk throught the flag pole to take their flag, then run back to base and do the same to capture the other team's flag.
+Bear in mind that your flag MUST be at your base to capture the other teams flag!
+To kill players, place tnt and explode by placing a purple block, or place a mine by placing a dark grey block and hope that someone runs into it!

@@ -13,6 +13,7 @@
 	permissions and limitations under the License.
 */
 using System;
+using System.IO;
 
 namespace Overv {
 	public class CmdHelp : Command {
@@ -20,109 +21,34 @@ namespace Overv {
         public override string type { get { return "info"; } }
         public override LevelPermission defaultPerm { get { return LevelPermission.Guest; } }
 		public CmdHelp() {  }
-		public override void Use(Player p,string message)  
-        {
-            string category = "";
-            switch ( message.ToLower() ) {
-                case "":
-                    p.SendMessage( "Use &a/help Groups&S to view a list of groups." );
-                    p.SendMessage( "Use &a/help All&S to view a list of &aAll&S commands." );
-                    p.SendMessage( "Use &a/help Build&S to view a list of &aBuilding&S commands." );
-                    p.SendMessage( "Use &a/help Mod&S to view a list of &aModeration&S commands." );
-                    p.SendMessage( "Use &a/help Info&S to view a list of &aInfo&S commands." );
-                    p.SendMessage( "Use &a/help Other&S to view a list of &aOther&S commands." );
-                    p.SendMessage( "Use &a/help [command]&S or &a/help [block]&S for more info." );
-                    break;
-                case "groups":
-                    foreach ( Group grp in Group.groups ) {
-                        p.SendMessage( grp.color + grp.name + "&b - Draw Limit: " + grp.drawLimit + "&c - Permission: " + grp.permission.GetHashCode() );
-                    }
-                    break;
-                case "all":                    
-                    category = message;
-                    message = "";
-                    Command.all.commands.ForEach( delegate( Command cmd ) {
-                        message += ", " + GetColor( cmd ) + cmd.name;
-                    } );
-                    if ( message == "" ) {
-                        message = category + " commands unavailable to you.";
-                    } else {
-                        message = message.Remove( 0, 2 );
-                    }
-                    p.SendMessage( category + "&S commands: " + message );
-                    break;
-                case "build":
-                    category = message;
-                    message = "";
-                    Command.all.commands.ForEach( delegate( Command cmd ) {
-                        if ( cmd.type == category && p.group.canUse( cmd ) ) {
-                            message += ", " + GetColor( cmd ) + cmd.name;
-                        }
-                    } );
-                    if ( message == "" ) {
-                        message = "No " + category + " commands available to you.";
-                    } else {
-                        message = message.Remove( 0, 2 );
-                    }
-                    p.SendMessage( category + "&S commands: " + message );
-                    break;
-                case "mod":
-                    category = message;
-                    message = "";
-                    Command.all.commands.ForEach( delegate( Command cmd ) {
-                        if ( cmd.type == category && p.group.canUse( cmd ) ) {
-                            message += ", " + GetColor( cmd ) + cmd.name;
-                        }
-                    } );
-                    if ( message == "" ) {
-                        message = "No " + category + " commands available to you.";
-                    } else {
-                        message = message.Remove( 0, 2 );
-                    }
-                    p.SendMessage( category + "&S commands: " + message );
-                    break;
-                case "info":
-                    category = message;
-                    message = "";
-                    Command.all.commands.ForEach( delegate( Command cmd ) {
-                        if ( cmd.type == category && p.group.canUse( cmd ) ) {
-                            message += ", " + GetColor( cmd ) + cmd.name;
-                        }
-                    } );
-                    if ( message == "" ) {
-                        message = "No " + category + " commands available to you.";
-                    } else {
-                        message = message.Remove( 0, 2 );
-                    }
-                    p.SendMessage( category + "&S commands: " + message );
-                    break;
-                case "other":
-                    category = message;
-                    message = "";
-                    Command.all.commands.ForEach( delegate( Command cmd ) {
-                        if ( cmd.type == category && p.group.canUse( cmd ) ) {
-                            message += ", " + GetColor( cmd ) + cmd.name;
-                        }
-                    } );
-                    if ( message == "" ) {
-                        message = "No " + category + " commands available to you.";
-                    } else {
-                        message = message.Remove( 0, 2 );
-                    }
-                    p.SendMessage( category + "&S commands: " + message );
-                    break;
-                default:
-                    if ( Command.all.Find( message ) != null ) {
-                        Command.all.Find( message ).Help( p );
-                        p.SendMessage( "Rank needed: " + GetColor( Command.all.Find( message ) ) + Group.commandPerms.Find( cmda => cmda.cmd == Command.all.Find( message ) ).perm );
-                    } else if ( Block.Byte( message ) != Block.Zero ) {
-                        p.SendMessage( "Block &b" + Block.Name( Block.Byte( message ) ) + "&S appears as &3" + Block.Name( Block.Convert( Block.Byte( message ) ) ) );
-                    } else {
-                        p.SendMessage( "Could not find specified command or block \"" + message + "\"." );
-                    }
-                    break;
+        public override void Use( Player p, string message ) {
+            if ( message != "" ) {
+                if ( Command.all.Find( message ) != null ) {
+                    Command.all.Find( message ).Help( p );
+                    p.SendMessage( "Rank needed: " + GetColor( Command.all.Find( message ) ) + Group.commandPerms.Find( cmda => cmda.cmd == Command.all.Find( message ) ).perm );
+                } else if ( Block.Byte( message ) != Block.Zero ) {
+                    p.SendMessage( "Block &b" + Block.Name( Block.Byte( message ) ) + "&S appears as &3" + Block.Name( Block.Convert( Block.Byte( message ) ) ) );
+                } else {
+                    p.SendMessage( "Could not find specified command or block \"" + message + "\"." );
+                }
+
+                return;
             }
-		}
+
+            retry:
+            if ( File.Exists( "help.txt" ) ) {
+                foreach ( string line in File.ReadAllLines( "help.txt" ) ) {
+                    p.SendMessage( line );
+                }
+            } else {
+                StreamWriter sw = new StreamWriter( File.Create( "help.txt" ) );
+                sw.WriteLine( "(This message is customisable in help.txt!)\r\nRun to the other side and walk throught the flag pole to take their flag, then run back to base and do the same to capture the other team's flag.\r\nBear in mind that your flag MUST be at your base to capture the other teams flag!\r\nTo kill players, place tnt and explode by placing a purple block, or place a mine by placing a dark grey block and hope that someone runs into it!" );
+                sw.Flush();
+                sw.Close();
+                sw.Dispose();
+                goto retry;
+            }
+        }
 
         public string GetColor( Command cmd ) {
             foreach ( Group.CommandAllowance cmda in Group.commandPerms ) {
