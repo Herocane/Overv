@@ -1,0 +1,93 @@
+(11:37:09) Starting server...
+(11:37:09) LOADED: server.properties...
+(11:37:11) LOADED ctf_arena.lvl...
+(11:37:11) URL saved to externalurl.txt...
+(11:37:11) LOADED: command.properties...
+(11:37:11) autoload.txt does not exist...
+(11:37:11) Created listening socket on port 25565...
+(11:37:11) Finished setting up server...
+(11:37:35) 114.203.131.25 connected.
+(11:37:35) --> MasterGamerMc joined the game. (IP: 114.203.131.25)...
+(11:37:39) <Console> yo
+(11:37:44) <MasterGamerMc> hi who are u
+(11:37:53) <Console> owner
+(11:37:59) <MasterGamerMc> username?
+(11:38:05) <MasterGamerMc> narvy?
+(11:38:06) <Console> Herocane
+(11:38:06) 127.0.0.1 connected.
+(11:38:06) --> HeroCane joined the game. (IP: 127.0.0.1)...
+(11:38:09) <HeroCane> yo
+(11:38:11) <MasterGamerMc> hi
+(11:38:17) <HeroCane> wazzup
+(11:38:21) <MasterGamerMc> I thought narvy
+(11:38:27) <HeroCane> ?
+(11:38:29) <MasterGamerMc> u have ranks here
+(11:38:31) <MasterGamerMc> ?
+(11:38:35) <HeroCane> nope
+(11:38:38) <HeroCane> it's just CTF
+(11:38:39) <MasterGamerMc> oh
+(11:38:44) <HeroCane> there will be levels
+(11:38:50) <HeroCane> that you can achieve by playing :)
+(11:38:52) <MasterGamerMc> u should add just VIP Vet and OP
+(11:39:10) <HeroCane> there will be just op :')
+(11:39:16) <MasterGamerMc> ok
+(11:39:18) <HeroCane> I don't think I'll add VIP and Vet
+(11:39:19) <MasterGamerMc> herocane
+(11:39:22) <HeroCane> what?
+(11:39:28) <MasterGamerMc> can i HELP UR SERVER?
+(11:39:38) <HeroCane> not really xD
+(11:39:48) <MasterGamerMc> like be staff not staff like op
+(11:39:55) <MasterGamerMc> just help everyone
+(11:39:58) <MasterGamerMc> help u
+(11:40:02) <HeroCane> naa not really :')
+(11:40:30) <MasterGamerMc> I want a server :'(
+(11:40:34) <MasterGamerMc> nobody makes me one
+(11:40:35) <HeroCane> get one then xD
+(11:40:42) <MasterGamerMc> Idk how to make it
+(11:40:47) <HeroCane> you have to make one yourself :')
+(11:40:52) <HeroCane> then learn :')
+(11:40:56) <MasterGamerMc> how
+(11:40:57) <HeroCane> it's reaaaally easy
+(11:41:06) <HeroCane> you download the software
+(11:41:08) <MasterGamerMc> for u not for me
+(11:41:09) <HeroCane> run it
+(11:41:14) <HeroCane> boom a server
+(11:42:33) <MasterGamerMc> it is hard
+(11:42:39) <MasterGamerMc> I tryed 100 times
+(11:42:41) <HeroCane> really isn't :')
+(11:42:47) <HeroCane> you did it wrong then :')
+(11:42:48) <MasterGamerMc> and failed
+(11:42:56) <MasterGamerMc> everytime
+(11:43:00) <HeroCane> do you have your router password
+(11:43:47) <MasterGamerMc> yea
+(11:43:56) <MasterGamerMc> I already have a server
+(11:44:01) <MasterGamerMc> that my friend made me one
+(11:44:15) <HeroCane> have you port forwarded?
+(11:44:20) <MasterGamerMc> want to know name of it?
+(11:44:25) <MasterGamerMc> it it is on now
+(11:44:30) <HeroCane> what is it?
+(11:45:05) <MasterGamerMc> it is called Red Saphires
+(11:45:19) <MasterGamerMc> Red Saphires (Gems Craft)
+(11:46:05) <MasterGamerMc> ?
+(11:46:26) <MasterGamerMc> ..
+(11:50:11) <MasterGamerMc> hero?
+(11:50:19) <-- MasterGamerMc left the game.
+(12:34:18) <-- HeroCane left the game.
+(12:35:56) Starting server...
+(12:35:56) LOADED: server.properties...
+(12:35:56) LOADED ctf_arena.lvl...
+(12:35:56) LOADED: command.properties...
+(12:35:56) autoload.txt does not exist...
+(12:35:56) Created listening socket on port 25565...
+(12:35:56) Finished setting up server...
+(12:35:56) URL saved to externalurl.txt...
+(12:36:14) 127.0.0.1 connected.
+(12:36:14) --> HeroCane joined the game. (IP: 127.0.0.1)...
+(12:37:17) <-- HeroCane left the game.
+(15:29:05) Starting server...
+(15:29:05) LOADED: server.properties...
+(15:29:09) LOADED ctf_arena.lvl...
+(15:29:09) LOADED: command.properties...
+(15:29:09) autoload.txt does not exist...
+(15:29:09) Created listening socket on port 25565...
+(15:29:09) Finished setting up server...

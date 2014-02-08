@@ -1,0 +1,8 @@
+C:\Users\Sam\Documents\GitHub\Overv\mcsharp-source\Overv CLI\bin\Debug\Overv CLI.exe
+C:\Users\Sam\Documents\GitHub\Overv\mcsharp-source\Overv CLI\bin\Debug\Overv CLI.pdb
+C:\Users\Sam\Documents\GitHub\Overv\mcsharp-source\Overv CLI\bin\Debug\Overv.dll
+C:\Users\Sam\Documents\GitHub\Overv\mcsharp-source\Overv CLI\bin\Debug\Meebey.SmartIrc4net.dll
+C:\Users\Sam\Documents\GitHub\Overv\mcsharp-source\Overv CLI\bin\Debug\Overv.pdb
+C:\Users\Sam\Documents\GitHub\Overv\mcsharp-source\Overv CLI\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Sam\Documents\GitHub\Overv\mcsharp-source\Overv CLI\obj\Debug\Overv CLI.exe
+C:\Users\Sam\Documents\GitHub\Overv\mcsharp-source\Overv CLI\obj\Debug\Overv CLI.pdb

@@ -1,0 +1,12 @@
+C:\Users\Sam\Documents\GitHub\Overv\mcsharp-source\Overv GUI\bin\Debug\Overv GUI.exe
+C:\Users\Sam\Documents\GitHub\Overv\mcsharp-source\Overv GUI\bin\Debug\Overv GUI.pdb
+C:\Users\Sam\Documents\GitHub\Overv\mcsharp-source\Overv GUI\bin\Debug\Overv.dll
+C:\Users\Sam\Documents\GitHub\Overv\mcsharp-source\Overv GUI\bin\Debug\Meebey.SmartIrc4net.dll
+C:\Users\Sam\Documents\GitHub\Overv\mcsharp-source\Overv GUI\bin\Debug\Overv.pdb
+C:\Users\Sam\Documents\GitHub\Overv\mcsharp-source\Overv GUI\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Sam\Documents\GitHub\Overv\mcsharp-source\Overv GUI\obj\Debug\Overv.Gui.Properties.Resources.resources
+C:\Users\Sam\Documents\GitHub\Overv\mcsharp-source\Overv GUI\obj\Debug\Overv.Gui.Window.resources
+C:\Users\Sam\Documents\GitHub\Overv\mcsharp-source\Overv GUI\obj\Debug\GenerateResource.read.1.tlog
+C:\Users\Sam\Documents\GitHub\Overv\mcsharp-source\Overv GUI\obj\Debug\GenerateResource.write.1.tlog
+C:\Users\Sam\Documents\GitHub\Overv\mcsharp-source\Overv GUI\obj\Debug\Overv GUI.exe
+C:\Users\Sam\Documents\GitHub\Overv\mcsharp-source\Overv GUI\obj\Debug\Overv GUI.pdb

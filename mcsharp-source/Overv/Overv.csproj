@@ -1,0 +1,205 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <ProjectGuid>{A59E3BC3-0D09-4F86-95BE-A3E22C7381F0}</ProjectGuid>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <OutputType>Library</OutputType>
+    <RootNamespace>Overv</RootNamespace>
+    <AssemblyName>Overv</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <StartupObject>
+    </StartupObject>
+    <ApplicationIcon>
+    </ApplicationIcon>
+    <ManifestCertificateThumbprint>5A72FDFB17E2E01005501162C8C8D21D4D8AC762</ManifestCertificateThumbprint>
+    <ManifestKeyFile>sharp-obsidian_TemporaryKey.pfx</ManifestKeyFile>
+    <GenerateManifests>true</GenerateManifests>
+    <SignManifests>true</SignManifests>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <UpgradeBackupLocation />
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>1</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <OutputPath>bin\Debug\</OutputPath>
+    <DebugSymbols>True</DebugSymbols>
+    <DebugType>Full</DebugType>
+    <Optimize>False</Optimize>
+    <CheckForOverflowUnderflow>True</CheckForOverflowUnderflow>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <OutputPath>bin\Release\</OutputPath>
+    <DebugSymbols>False</DebugSymbols>
+    <DebugType>None</DebugType>
+    <Optimize>True</Optimize>
+    <CheckForOverflowUnderflow>False</CheckForOverflowUnderflow>
+    <DefineConstants>TRACE</DefineConstants>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <WarningLevel>4</WarningLevel>
+    <CheckForOverflowUnderflow>true</CheckForOverflowUnderflow>
+    <CustomCommands>
+      <CustomCommands>
+        <Command type="BeforeBuild" />
+      </CustomCommands>
+    </CustomCommands>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DocumentationFile>
+    </DocumentationFile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>none</DebugType>
+    <Optimize>true</Optimize>
+    <WarningLevel>4</WarningLevel>
+    <DocumentationFile>
+    </DocumentationFile>
+    <GenerateSerializationAssemblies>Auto</GenerateSerializationAssemblies>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <ItemGroup>
+    <Reference Include="Meebey.SmartIrc4net, Version=0.4.0.34161, Culture=neutral">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>.\Meebey.SmartIrc4net.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Capture The Flag\Game.cs" />
+    <Compile Include="Capture The Flag\Team.cs" />
+    <Compile Include="Commands\CmdBlueTeam.cs" />
+    <Compile Include="Commands\CmdDrop.cs" />
+    <Compile Include="Commands\CmdRedTeam.cs" />
+    <Compile Include="Commands\CmdSetRank.cs" />
+    <Compile Include="Commands\CmdDefuse.cs" />
+    <Compile Include="Commands\CmdDislike.cs" />
+    <Compile Include="Commands\CmdLike.cs" />
+    <Compile Include="Commands\CmdSetBuildHeight.cs" />
+    <Compile Include="Levels\AutoSaver.cs" />
+    <Compile Include="Levels\Block.cs" />
+    <Compile Include="Color.cs" />
+    <Compile Include="Commands\CmdAfk.cs" />
+    <Compile Include="Commands\CmdBan.cs" />
+    <Compile Include="Commands\CmdBanip.cs" />
+    <Compile Include="Commands\CmdDeleteLvl.cs" />
+    <Compile Include="Commands\CmdGoto.cs" />
+    <Compile Include="Commands\CmdPermissionBuild.cs" />
+    <Compile Include="Commands\CmdPermissionVisit.cs" />
+    <Compile Include="Commands\CmdPlayers.cs" />
+    <Compile Include="Commands\CmdRestore.cs" />
+    <Compile Include="Commands\CmdRules.cs" />
+    <Compile Include="Commands\CmdUnload.cs" />
+    <Compile Include="Commands\CmdKickban.cs" />
+    <Compile Include="Commands\CmdLevels.cs" />
+    <Compile Include="Commands\CmdLoad.cs" />
+    <Compile Include="Commands\CmdSave.cs" />
+    <Compile Include="Commands\CmdSetSpawn.cs" />
+    <Compile Include="Commands\CmdSummon.cs" />
+    <Compile Include="Commands\CmdTp.cs" />
+    <Compile Include="Commands\CmdUnban.cs" />
+    <Compile Include="Commands\CmdUnbanip.cs" />
+    <Compile Include="Commands\CmdMove.cs" />
+    <Compile Include="Heartbeat.cs" />
+    <Compile Include="IRCBot.cs" />
+    <Compile Include="Levels\Level.cs" />
+    <Compile Include="Levels\MapGenerator.cs" />
+    <Compile Include="Logger.cs" />
+    <Compile Include="Player\PlayerDB.cs" />
+    <Compile Include="Player\Rank.cs" />
+    <Compile Include="Queue\Cache.cs" />
+    <Compile Include="Queue\Check.cs" />
+    <Compile Include="Queue\Enums.cs" />
+    <Compile Include="Queue\ICacheable.cs" />
+    <Compile Include="Queue\MainLoop.cs" />
+    <Compile Include="Player\PlayerList.cs" />
+    <Compile Include="Commands\CmdKick.cs" />
+    <Compile Include="Commands\CmdHelp.cs" />
+    <Compile Include="Commands\CmdInfo.cs" />
+    <Compile Include="Commands\Command.cs" />
+    <Compile Include="Commands\CommandList.cs" />
+    <Compile Include="Player\Group.cs" />
+    <Compile Include="Player\Player.cs" />
+    <Compile Include="Properties.cs" />
+    <Compile Include="Queue\TorrentException.cs" />
+    <Compile Include="Server.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.2.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 2.0 %28x86%29</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.0 %28x86%29</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.SQL.Server.Compact.3.5">
+      <Visible>False</Visible>
+      <ProductName>SQL Server Compact 3.5 SP2</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ProjectExtensions>
+    <MonoDevelop>
+      <Properties>
+        <Policies>
+          <ChangeLogPolicy UpdateMode="ProjectRoot" inheritsSet="Mono">
+            <MessageStyle LineAlign="0" />
+          </ChangeLogPolicy>
+        </Policies>
+      </Properties>
+    </MonoDevelop>
+    <VisualStudio />
+  </ProjectExtensions>
+</Project>
