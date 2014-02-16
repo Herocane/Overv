@@ -18,18 +18,18 @@ namespace Overv {
         public static Thread returnThread;
 
         public static int returnTime = 15;
-        public static int voteTime = 20;
+        public static int voteTime = 20; // The voting time
         public static int drownTime = 14;
-        public static int mineActivationTime = 3;
-        public static int takeFlagReward = 2;
-        public static int captureFlagReward = 20;
-        public static int returnFlagReward = 4;
-        public static int killPlayerReward = 1;
-        public static int mineBlastRadius = 2;
-        public static int tntBlastRadius = 3;
-        public static bool mineDestroyBlocks = false;
-        public static bool tntDestroyBlocks = false;
-        public static bool allowOpHax = false;
+        public static int mineActivationTime = 3; //How long it takes to activate the mine
+        public static int takeFlagReward = 2; //Reward for taking the Flag
+        public static int captureFlagReward = 20; //Reward for Capturing the Flag
+        public static int returnFlagReward = 4; //Reward for returning the flag
+        public static int killPlayerReward = 1; //Reward for Killing the Player
+        public static int mineBlastRadius = 2; //Mine activation Radius
+        public static int tntBlastRadius = 3; //tnt blast radius
+        public static bool mineDestroyBlocks = false; //Do mine destroy blocks?
+        public static bool tntDestroyBlocks = false; //Do tnt destroy blocks?
+        public static bool allowOpHax = false; //Should ops allow hacks?
         static int redReturnCount;
         static int blueReturnCount;
 
