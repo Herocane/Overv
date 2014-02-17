@@ -64,6 +64,7 @@ namespace Overv
         public LevelPermission permissionbuild = LevelPermission.Builder;// What ranks can go to this map (excludes banned)
 
         public byte[] blocks;
+        public byte[] backupBlocks;
         List<Check> ListCheck = new List<Check>();  //A list of blocks that need to be updated
         List<Update> ListUpdate = new List<Update>();  //A list of block to change after calculation
 
@@ -329,6 +330,7 @@ namespace Overv
                         level.blocks[i] = blocks[i];
                     }
                     gs.Close();
+                    level.backupBlocks = blocks;
 
                     level.LoadProperties();
 

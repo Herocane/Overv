@@ -26,7 +26,6 @@ namespace Overv {
 			foreach (Level level in Server.levels) {
 				if (level.name.ToLower() == message.ToLower()) 
                 {
-					if (p.level == level) { p.SendMessage("You are already in \""+level.name+"\"."); return; }
                     if (p.group.permission < level.permissionvisit) { p.SendMessage("Your not allowed to goto " + level.name + "."); return; }
                     p.Loading = true;
 

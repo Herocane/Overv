@@ -22,46 +22,52 @@ namespace Overv
         public override string type { get { return "mod"; } }
         public override LevelPermission defaultPerm { get { return LevelPermission.Operator; } }
         public CmdBan() { }
-        public override void Use(Player p, string message)
-        {
-            if (p != null)
-            {
-
-                if (message == "") { Help(p); return; }
-                if (!Player.ValidName(message)) { p.SendMessage("Invalid name \"" + message + "\"."); return; }
-                if (Server.banned.Contains(message)) { p.SendMessage(message + " is already banned."); return; }
-                Player who = Player.Find(message);
-
-                if ( who == null ) {
-                    Player.GlobalMessage( message + " &f(offline)&8 was banned." );
-                } else {
-                    Player.GlobalChat( who, who.color + who.name + "&8 was banned.", false );
-                    who.group = Group.Find( "banned" ); who.color = who.group.color; Player.GlobalDie( who, false );
-                    Player.GlobalSpawn( who, who.pos[0], who.pos[1], who.pos[2], who.rot[0], who.rot[1], false );
-                }
-
-                Server.banned.Add(message); 
-                Server.banned.Save("banned.txt", false); 
-                IRCBot.Say(message + " was banned by " + p.name);
-                Server.s.Log("BANNED: " + message.ToLower());
+        public override void Use(Player p, string message) {
+            bool silent = false;
+            if ( message.Contains( "silent" ) ) {
+                silent = true;
             }
-            else
-            {
-                if (message == "") {return; }
-                if (!Player.ValidName(message)) { return; }
-                if (Server.banned.Contains(message)) { return; }
-                Player who = Player.Find(message);
 
-                if ( who == null ) { Player.GlobalMessage( message + " &f(offline)&8 was banned." ); } else {
-                    Player.GlobalChat( who, who.color + who.name + "&8 was banned.", false );
-                    who.group = Group.Find( "banned" ); who.color = who.group.color; Player.GlobalDie( who, false );
-                    Player.GlobalSpawn( who, who.pos[0], who.pos[1], who.pos[2], who.rot[0], who.rot[1], false );
+            Player who = Player.Find( message.Split( ' ' )[0].Trim() );
+            if ( who == p ) {
+                return;
+            }
+
+            Server.banned.Add( message.Split( ' ' )[0].Trim() );
+            Server.banned.Save( "banned.txt" );
+
+            if ( p != null ) {
+                if ( who != null ) {
+                    if ( silent ) {
+                        Player.GlobalMessage( "&3(Someone) &Sbanned " + who.color + who.name + "&S." );
+                    } else {
+                        Player.GlobalMessage( p.color + p.name + " &Sbanned " + who.color + who.name + "&S." );
+                    }
+                } else {
+                    if ( silent ) {
+                        Player.GlobalMessage( "&3(Someone) &Sbanned &8" + message.Split( ' ' )[0].Trim() + "&f(offline)&S." );
+                    } else {
+                        Player.GlobalMessage( p.color + p.name + " &Sbanned &8" + message.Split( ' ' )[0].Trim() + "&f(offline)&S." );
+                    }
                 }
+            } else {
+                if ( who != null ) {
+                    if ( silent ) {
+                        Player.GlobalMessage( "&3(Someone) &Sbanned " + who.color + who.name + "&S." );
+                    } else {
+                        Player.GlobalMessage( "&8Console &Sbanned " + who.color + who.name + "&S." );
+                    }
+                } else {
+                    if ( silent ) {
+                        Player.GlobalMessage( "&3(Someone) &Sbanned &8" + message.Split( ' ' )[0].Trim() + "&f(offline)&S." );
+                    } else {
+                        Player.GlobalMessage( "&8Console &Sbanned &8" + message.Split( ' ' )[0].Trim() + "&f(offline)&S." );
+                    }
+                }
+            }
 
-                Server.banned.Add(message); 
-                Server.banned.Save("banned.txt", false); 
-                IRCBot.Say(message + " was banned by [console]");
-                Server.s.Log("BANNED: " + message.ToLower());
+            if ( who != null ) {
+                who.Kick( "You've been banned!" );
             }
         }
         public override void Help(Player p)

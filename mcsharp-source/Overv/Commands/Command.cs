@@ -26,11 +26,11 @@ namespace Overv {
         public static void Load() {
             all.Add( new CmdBan() );
             all.Add( new CmdBanip() );
+            all.Add( new CmdGag() );
             all.Add( new CmdGoto() );
             all.Add( new CmdHelp() );
             all.Add( new CmdInfo() );
             all.Add( new CmdKick() );
-            all.Add( new CmdKickban() );
             all.Add( new CmdLevels() );
             all.Add( new CmdLoad() );
             all.Add( new CmdPlayers() );

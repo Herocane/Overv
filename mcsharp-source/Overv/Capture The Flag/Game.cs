@@ -200,22 +200,25 @@ namespace Overv {
             }
 
             if ( optionCount == 1 ) {
+                currLevel.blocks = currLevel.backupBlocks;
+                Player.players.ForEach( delegate( Player p ) {
+                    Command.all.Find( "goto" ).Use( p, newLevel.name );
+                    Thread.Sleep( 500 );
+                } );
                 Setup( currLevel );
                 return;
             }
 
-            Team.teams.ForEach( delegate( Team team ) {
-                team.players.ForEach( delegate( Player p ) {
-                    p.SendMessage( "&f- &SVote for the next map:" );
-                    if ( optionCount == 2 ) {
-                        p.SendMessage( "     1 - &b" + option1 + "&S &f|&S 2 - &b" + option2 );
-                        p.SendMessage( "&f- &SType &a/1&S or &a/2&S to vote." );
-                    } else {
-                        p.SendMessage( "     1 - &b" + option1 + "&S &f|&S 2 - &b" + option2 + "&S &f|&S 3 - &b" + option3 );
-                        p.SendMessage( "&f- &SType &a/1&S, &a/2&S or &a/3&S to vote." );
-                    }
-                    p.OnChat += ProcessVote;
-                } );
+            Player.players.ForEach( delegate( Player p ) {
+                p.SendMessage( "&f- &SVote for the next map:" );
+                if ( optionCount == 2 ) {
+                    p.SendMessage( "     1 - &b" + option1 + "&S &f|&S 2 - &b" + option2 );
+                    p.SendMessage( "&f- &SType &a/1&S or &a/2&S to vote." );
+                } else {
+                    p.SendMessage( "     1 - &b" + option1 + "&S &f|&S 2 - &b" + option2 + "&S &f|&S 3 - &b" + option3 );
+                    p.SendMessage( "&f- &SType &a/1&S, &a/2&S or &a/3&S to vote." );
+                }
+                p.OnChat += ProcessVote;
             } );
 
             Thread.Sleep( voteTime * 1000 );
@@ -266,10 +269,9 @@ namespace Overv {
                 Player.GlobalMessage( "&f- &2Next map selected: &b" + newLevel.name + "." );
                 Server.s.CTFLog( "Next map is: " + newLevel.name + "." );
                 Thread.Sleep( 7500 );
+                currLevel.blocks = currLevel.backupBlocks;
                 Player.players.ForEach( delegate( Player p ) {
-                    if ( p.level != newLevel ) {
-                        Command.all.Find( "goto" ).Use( p, newLevel.name );
-                    }
+                    Command.all.Find( "goto" ).Use( p, newLevel.name );
                     Thread.Sleep( 500 );
                 } );
                 Setup( newLevel, true );
@@ -371,6 +373,7 @@ namespace Overv {
             p.carryingFlag = true;
             Player.GlobalMessage( "&f- " + p.color + p.name + "&S took the " + team.color + team.name + "&S flag!" );
             Server.s.CTFLog( p.name + " took the " + team.name + " flag!" );
+            p.Reward( takeFlagReward );
         }
 
         public static void CaptureFlag( Player p, Team team ) {
@@ -380,6 +383,7 @@ namespace Overv {
             p.carryingFlag = false;
             Player.GlobalMessage( "&f- " + p.color + p.name + "&S captured the " + team.color + team.name + "&S flag!" );
             Server.s.CTFLog( p.name + " captured the " + team.name + " flag!" );
+            p.Reward( captureFlagReward );
             p.team.points++;
             UpdateScore();
             p.captureStreak++;

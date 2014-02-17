@@ -21,6 +21,9 @@ using System.Text;
 using System.Windows.Forms;
 using System.Threading;
 using System.Text.RegularExpressions;
+using System.Net;
+using System.IO;
+using System.IO.Compression;
 
 using Overv;
 
@@ -52,6 +55,7 @@ namespace Overv.Gui
             s.OnCTFLog += WriteCTFLine;
             s.HeartBeatFail += HeartBeatFail;
             s.OnURLChange += UpdateUrl;
+            s.OnPlayerUpdate += UpdatePlayerBalloon;
             s.OnPlayerListChange += UpdateClientList;
             s.OnSettingsUpdate += SettingsUpdate;
             s.Start();
@@ -60,7 +64,42 @@ namespace Overv.Gui
             statsTimer.Elapsed += delegate {
                 UpdateStats();
             };
-            statsTimer.Start();            
+            statsTimer.Start();
+
+            UpdateMaps();
+        }
+
+        static List<MapInfo> availableMaps = new List<MapInfo>();
+
+        struct MapInfo {
+            public string name;
+            public string author;
+            public string description;
+            public string image;
+
+            public MapInfo( string nname, string nauthor, string ndescription, string nimage ) {
+                name = nname;
+                author = nauthor;
+                description = ndescription;
+                image = nimage;
+            }
+        }
+
+        void UpdateMaps() {
+            try {
+                WebClient wc = new WebClient();
+                wc.DownloadFile( "http://mcderp.x10.mx/downloads/availablemaps.txt", "maps.txt" );
+                foreach ( string line in File.ReadAllLines( "maps.txt" ) ) {
+                    availableMaps.Add( new MapInfo( line.Split( ':' )[0].Trim(), line.Split( ':' )[1].Trim(), line.Split( ':' )[2].Trim(), line.Split( ':' )[3].Trim() ) );
+                }
+                wc.Dispose();
+            } catch(WebException we) {
+                MessageBox.Show( "Unable to download maplist! Details: " + we.ToString() );
+            }
+
+            foreach ( MapInfo mi in availableMaps ) {
+                liOnlineMaps.Items.Add( mi.name );
+            }
         }
 
         void UpdateStats() {
@@ -186,6 +225,20 @@ namespace Overv.Gui
                 Player.players.ForEach(delegate(Player p) { liClients.Items.Add(p.name); });
             }
         }
+
+        /// <summary>
+        /// Pops up a little tray balloon.
+        /// </summary>
+        /// <param name="hasLeft"></param>
+        public void UpdatePlayerBalloon( Player p, bool hasLeft ) {
+            NotifyIcon notify = new NotifyIcon();
+            notify.Icon = SystemIcons.Application;
+            notify.Visible = true;
+            notify.BalloonTipTitle = p.name + ((hasLeft == true) ? " left the game." : " joined the game.");
+            notify.BalloonTipText = "There are now " + ((hasLeft == true) ? (Player.players.Count - 1) : Player.players.Count) + " players online.";
+            notify.ShowBalloonTip( 3000 );
+        }
+
         /// <summary>
         /// Places the server's URL at the top of the window
         /// </summary>
@@ -285,6 +338,47 @@ namespace Overv.Gui
             }
 
             isExpanded = !isExpanded;
+        }
+
+        private void liOnlineMaps_SelectedIndexChanged( object sender, EventArgs e ) {
+            if ( liOnlineMaps.SelectedIndex != -1 ) {
+                btnDownloadMap.Enabled = true;
+
+                MapInfo match = new MapInfo("N/a", "N/a", "N/a", "N/a");
+
+                foreach ( MapInfo mi in availableMaps ) {
+                    if ( mi.name == liOnlineMaps.SelectedItem.ToString() ) {
+                        match = mi;
+                    }
+                }
+
+                lblMapName.Text = "Name: " + match.name;
+                lblMapAuthor.Text = "Author: " + match.author;
+                txtMapDescription.Text = match.description;
+
+                try {
+                    pictureBox1.ImageLocation = "http://mcderp.x10.mx/downloads/" + match.image;
+                } catch {
+
+                }
+            }
+        }
+
+        private void btnDownloadMap_Click( object sender, EventArgs e ) {
+            foreach ( MapInfo mi in availableMaps ) {
+                if ( mi.name == liOnlineMaps.SelectedItem.ToString() ) {
+                    try {
+                        WebClient wc = new WebClient();
+                        wc.DownloadFile( "http://mcderp.x10.mx/downloads/" + mi.name + ".lvl", "levels/" + mi.name + ".lvl" );
+                        wc.DownloadFile( "http://mcderp.x10.mx/downloads/" + mi.name + ".properties", "levels/" + mi.name + ".properties" );
+                        wc.Dispose();
+
+                        Server.s.Log( "Downloaded \"" + mi.name + "\" from http://mcderp.x10.mx/..." );
+                    } catch(WebException we) {
+                        MessageBox.Show( "An error occured whilst attempting to download your map. Details: " + we.ToString() );
+                    }
+                }
+            }
         }
     }
 }

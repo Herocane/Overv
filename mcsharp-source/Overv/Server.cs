@@ -32,6 +32,7 @@ namespace Overv {
         public delegate void LogHandler( string message );
         public delegate void HeartBeatHandler();
         public delegate void MessageEventHandler( string message );
+        public delegate void PlayerUpdateHandler( Player p, bool hasLeft );
         public delegate void PlayerListHandler( List<Player> playerList );
         public delegate void VoidHandler();
 
@@ -39,6 +40,7 @@ namespace Overv {
         public event LogHandler OnCTFLog;
         public event HeartBeatHandler HeartBeatFail;
         public event MessageEventHandler OnURLChange;
+        public event PlayerUpdateHandler OnPlayerUpdate;
         public event PlayerListHandler OnPlayerListChange;
         public event VoidHandler OnSettingsUpdate;
 
@@ -337,6 +339,10 @@ namespace Overv {
                 process.Kill();
             }
 
+        }
+
+        public void PlayerUpdate( Player p, bool hasLeft ) {
+            if ( OnPlayerUpdate != null ) OnPlayerUpdate( p, hasLeft );
         }
 
         public void PlayerListUpdate() {

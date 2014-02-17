@@ -26,13 +26,13 @@ namespace Overv {
                         ranks.Add( new Rank( fid, frequiredxp ) );
                     }
                 }
-            } else {
-
             }
 
             for ( int i = 0; i <= 20; i++ ) {
-                if ( ranks.Find( rnk => rnk.id == i ) == null ) { ranks.Add( new Rank( i, i*i ) ); }
+                if ( ranks.Find( rnk => rnk.id == i ) == null ) { ranks.Add( new Rank( i, i*i*i ) ); }
             }
+
+            Save();
         }
 
         public static void Save() {
@@ -46,17 +46,14 @@ namespace Overv {
         }
 
         public static Rank FindRank( int points ) {
-            Rank foundRank = null;
-            foreach ( Rank rnk in ranks ) {
-                if ( foundRank != null ) {
-                    if ( rnk.requiredxp <= points && rnk.requiredxp < foundRank.requiredxp ) {
-                        foundRank = rnk;
-                    }
-                } else {
-                    foundRank = rnk;
+            List<Rank> ordered = ranks.OrderBy( rnk => rnk.requiredxp ).ToList();
+            Rank closest = null;
+            for ( int i = 0; i < ( ordered.Count - 1 ); i++ ) {
+                if ( ordered[i].requiredxp <= points ) {
+                    closest = ordered[i];
                 }
             }
-            return foundRank;
+            return closest;
         }
     }
 }

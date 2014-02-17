@@ -78,7 +78,7 @@ namespace Overv {
                     ushort y = spawn[1];
                     ushort z = spawn[2];
                     x *= 32; x += 16;
-                    y *= 32; y += 32;
+                    y *= 32; y += 0;
                     z *= 32; z += 16;
                     p.SendSpawn( (byte)-1, p.color + p.name, x, y, z, spawnrot[0], spawnrot[1] );
                 }

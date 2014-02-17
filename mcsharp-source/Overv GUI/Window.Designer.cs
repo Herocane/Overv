@@ -76,6 +76,17 @@ namespace Overv.Gui
             this.liRedPlayers = new System.Windows.Forms.ListBox();
             this.lbRedFlagStatus = new System.Windows.Forms.Label();
             this.lbRedScore = new System.Windows.Forms.Label();
+            this.tpMaps = new System.Windows.Forms.TabPage();
+            this.gbMapPreview = new System.Windows.Forms.GroupBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.gbMapInfo = new System.Windows.Forms.GroupBox();
+            this.txtMapDescription = new System.Windows.Forms.TextBox();
+            this.lblMapDescription = new System.Windows.Forms.Label();
+            this.lblMapAuthor = new System.Windows.Forms.Label();
+            this.lblMapName = new System.Windows.Forms.Label();
+            this.gbOnlineMaps = new System.Windows.Forms.GroupBox();
+            this.btnDownloadMap = new System.Windows.Forms.Button();
+            this.liOnlineMaps = new System.Windows.Forms.ListBox();
             this.gbCTFLogs.SuspendLayout();
             this.gbPlayerControls.SuspendLayout();
             this.tabControl1.SuspendLayout();
@@ -86,6 +97,11 @@ namespace Overv.Gui
             this.groupBox7.SuspendLayout();
             this.groupBox4.SuspendLayout();
             this.groupBox6.SuspendLayout();
+            this.tpMaps.SuspendLayout();
+            this.gbMapPreview.SuspendLayout();
+            ( (System.ComponentModel.ISupportInitialize)( this.pictureBox1 ) ).BeginInit();
+            this.gbMapInfo.SuspendLayout();
+            this.gbOnlineMaps.SuspendLayout();
             this.SuspendLayout();
             // 
             // txtServerLogs
@@ -242,6 +258,7 @@ namespace Overv.Gui
             // 
             this.tabControl1.Controls.Add( this.tpMain );
             this.tabControl1.Controls.Add( this.tpCTF );
+            this.tabControl1.Controls.Add( this.tpMaps );
             this.tabControl1.Location = new System.Drawing.Point( 12, 12 );
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
@@ -295,7 +312,7 @@ namespace Overv.Gui
             this.tpCTF.Padding = new System.Windows.Forms.Padding( 3 );
             this.tpCTF.Size = new System.Drawing.Size( 596, 483 );
             this.tpCTF.TabIndex = 1;
-            this.tpCTF.Text = "CTF";
+            this.tpCTF.Text = "Game Overview";
             // 
             // lbCurrentLevel
             // 
@@ -445,6 +462,127 @@ namespace Overv.Gui
             this.lbRedScore.TabIndex = 2;
             this.lbRedScore.Text = "Score: ";
             // 
+            // tpMaps
+            // 
+            this.tpMaps.Controls.Add( this.gbMapPreview );
+            this.tpMaps.Controls.Add( this.gbMapInfo );
+            this.tpMaps.Controls.Add( this.gbOnlineMaps );
+            this.tpMaps.Location = new System.Drawing.Point( 4, 22 );
+            this.tpMaps.Name = "tpMaps";
+            this.tpMaps.Padding = new System.Windows.Forms.Padding( 3 );
+            this.tpMaps.Size = new System.Drawing.Size( 596, 483 );
+            this.tpMaps.TabIndex = 2;
+            this.tpMaps.Text = "Maps";
+            this.tpMaps.UseVisualStyleBackColor = true;
+            // 
+            // gbMapPreview
+            // 
+            this.gbMapPreview.Controls.Add( this.pictureBox1 );
+            this.gbMapPreview.Location = new System.Drawing.Point( 193, 230 );
+            this.gbMapPreview.Name = "gbMapPreview";
+            this.gbMapPreview.Size = new System.Drawing.Size( 397, 247 );
+            this.gbMapPreview.TabIndex = 3;
+            this.gbMapPreview.TabStop = false;
+            this.gbMapPreview.Text = "Map Preview";
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pictureBox1.ErrorImage = ( (System.Drawing.Image)( resources.GetObject( "pictureBox1.ErrorImage" ) ) );
+            this.pictureBox1.InitialImage = ( (System.Drawing.Image)( resources.GetObject( "pictureBox1.InitialImage" ) ) );
+            this.pictureBox1.Location = new System.Drawing.Point( 84, 17 );
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size( 222, 222 );
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.pictureBox1.TabIndex = 0;
+            this.pictureBox1.TabStop = false;
+            // 
+            // gbMapInfo
+            // 
+            this.gbMapInfo.Controls.Add( this.txtMapDescription );
+            this.gbMapInfo.Controls.Add( this.lblMapDescription );
+            this.gbMapInfo.Controls.Add( this.lblMapAuthor );
+            this.gbMapInfo.Controls.Add( this.lblMapName );
+            this.gbMapInfo.Location = new System.Drawing.Point( 193, 6 );
+            this.gbMapInfo.Name = "gbMapInfo";
+            this.gbMapInfo.Size = new System.Drawing.Size( 397, 218 );
+            this.gbMapInfo.TabIndex = 2;
+            this.gbMapInfo.TabStop = false;
+            this.gbMapInfo.Text = "Map Info";
+            // 
+            // txtMapDescription
+            // 
+            this.txtMapDescription.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtMapDescription.Font = new System.Drawing.Font( "Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ( (byte)( 0 ) ) );
+            this.txtMapDescription.ForeColor = System.Drawing.Color.Gray;
+            this.txtMapDescription.Location = new System.Drawing.Point( 17, 116 );
+            this.txtMapDescription.Multiline = true;
+            this.txtMapDescription.Name = "txtMapDescription";
+            this.txtMapDescription.Size = new System.Drawing.Size( 358, 80 );
+            this.txtMapDescription.TabIndex = 3;
+            this.txtMapDescription.Text = "[Select a map]";
+            // 
+            // lblMapDescription
+            // 
+            this.lblMapDescription.AutoSize = true;
+            this.lblMapDescription.Font = new System.Drawing.Font( "Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ( (byte)( 0 ) ) );
+            this.lblMapDescription.Location = new System.Drawing.Point( 13, 84 );
+            this.lblMapDescription.Name = "lblMapDescription";
+            this.lblMapDescription.Size = new System.Drawing.Size( 93, 20 );
+            this.lblMapDescription.TabIndex = 2;
+            this.lblMapDescription.Text = "Description:";
+            // 
+            // lblMapAuthor
+            // 
+            this.lblMapAuthor.AutoSize = true;
+            this.lblMapAuthor.Font = new System.Drawing.Font( "Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ( (byte)( 0 ) ) );
+            this.lblMapAuthor.Location = new System.Drawing.Point( 13, 52 );
+            this.lblMapAuthor.Name = "lblMapAuthor";
+            this.lblMapAuthor.Size = new System.Drawing.Size( 166, 20 );
+            this.lblMapAuthor.TabIndex = 1;
+            this.lblMapAuthor.Text = "Author: [Select a Map]";
+            // 
+            // lblMapName
+            // 
+            this.lblMapName.AutoSize = true;
+            this.lblMapName.Font = new System.Drawing.Font( "Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ( (byte)( 0 ) ) );
+            this.lblMapName.Location = new System.Drawing.Point( 13, 22 );
+            this.lblMapName.Name = "lblMapName";
+            this.lblMapName.Size = new System.Drawing.Size( 160, 20 );
+            this.lblMapName.TabIndex = 0;
+            this.lblMapName.Text = "Name: [Select a Map]";
+            // 
+            // gbOnlineMaps
+            // 
+            this.gbOnlineMaps.Controls.Add( this.btnDownloadMap );
+            this.gbOnlineMaps.Controls.Add( this.liOnlineMaps );
+            this.gbOnlineMaps.Location = new System.Drawing.Point( 6, 6 );
+            this.gbOnlineMaps.Name = "gbOnlineMaps";
+            this.gbOnlineMaps.Size = new System.Drawing.Size( 181, 471 );
+            this.gbOnlineMaps.TabIndex = 1;
+            this.gbOnlineMaps.TabStop = false;
+            this.gbOnlineMaps.Text = "Online Maps";
+            // 
+            // btnDownloadMap
+            // 
+            this.btnDownloadMap.Enabled = false;
+            this.btnDownloadMap.Location = new System.Drawing.Point( 6, 436 );
+            this.btnDownloadMap.Name = "btnDownloadMap";
+            this.btnDownloadMap.Size = new System.Drawing.Size( 169, 26 );
+            this.btnDownloadMap.TabIndex = 2;
+            this.btnDownloadMap.Text = "Download Map";
+            this.btnDownloadMap.UseVisualStyleBackColor = true;
+            this.btnDownloadMap.Click += new System.EventHandler( this.btnDownloadMap_Click );
+            // 
+            // liOnlineMaps
+            // 
+            this.liOnlineMaps.FormattingEnabled = true;
+            this.liOnlineMaps.Location = new System.Drawing.Point( 6, 22 );
+            this.liOnlineMaps.Name = "liOnlineMaps";
+            this.liOnlineMaps.Size = new System.Drawing.Size( 169, 407 );
+            this.liOnlineMaps.TabIndex = 3;
+            this.liOnlineMaps.SelectedIndexChanged += new System.EventHandler( this.liOnlineMaps_SelectedIndexChanged );
+            // 
             // Window
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF( 6F, 13F );
@@ -473,6 +611,12 @@ namespace Overv.Gui
             this.groupBox4.ResumeLayout( false );
             this.groupBox4.PerformLayout();
             this.groupBox6.ResumeLayout( false );
+            this.tpMaps.ResumeLayout( false );
+            this.gbMapPreview.ResumeLayout( false );
+            ( (System.ComponentModel.ISupportInitialize)( this.pictureBox1 ) ).EndInit();
+            this.gbMapInfo.ResumeLayout( false );
+            this.gbMapInfo.PerformLayout();
+            this.gbOnlineMaps.ResumeLayout( false );
             this.ResumeLayout( false );
 
         }
@@ -512,5 +656,16 @@ namespace Overv.Gui
         private System.Windows.Forms.Label lbRedWins;
         private System.Windows.Forms.Label lbCurrentLevel;
         private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.TabPage tpMaps;
+        private System.Windows.Forms.GroupBox gbMapPreview;
+        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.GroupBox gbMapInfo;
+        private System.Windows.Forms.TextBox txtMapDescription;
+        private System.Windows.Forms.Label lblMapDescription;
+        private System.Windows.Forms.Label lblMapAuthor;
+        private System.Windows.Forms.Label lblMapName;
+        private System.Windows.Forms.GroupBox gbOnlineMaps;
+        private System.Windows.Forms.Button btnDownloadMap;
+        private System.Windows.Forms.ListBox liOnlineMaps;
     }
 }
