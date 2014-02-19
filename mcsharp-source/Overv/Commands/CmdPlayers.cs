@@ -30,7 +30,8 @@ namespace Overv
             string playerList = "";
 
             Player.players.ForEach( delegate( Player pl ) {
-                playerList += ", " + pl.color + pl.name + " (" + pl.team.name + ")";
+                string team = ( pl.team == null ) ? "Spec" : pl.team.name;
+                playerList += ", " + pl.color + pl.name + " (" + team + ")";
             } );
 
             if ( playerList != "" ) {

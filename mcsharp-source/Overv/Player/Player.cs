@@ -54,6 +54,7 @@ namespace Overv {
         public Level level = CTF.currLevel;
         public bool Loading = true;
         public string lastMsg = "";
+        public int totalLogins;
 
         public string appName;
         public int extensionCount;
@@ -71,6 +72,10 @@ namespace Overv {
         public int kills;
         public int deaths;
         public int drownCount;
+        public int totalCaptures;
+        public int totalKills;
+        public int totalDeaths;
+        public int totalReturns;
         public int points;
         bool isActivating;
         public List<string> playersKilled = new List<string>();
@@ -365,12 +370,12 @@ namespace Overv {
                 CTF.UpdateScore();
 
                 retry:
-                if ( File.Exists( "welcome.txt" ) ) {
-                    foreach ( string line in File.ReadAllLines( "welcome.txt" ) ) {
+                if ( File.Exists( "text/welcome.txt" ) ) {
+                    foreach ( string line in File.ReadAllLines( "text/welcome.txt" ) ) {
                         SendMessage( line );
                     }
                 } else {
-                    StreamWriter sw = new StreamWriter( File.Create( "welcome.txt" ) );
+                    StreamWriter sw = new StreamWriter( File.Create( "text/welcome.txt" ) );
                     sw.WriteLine( "You are playing on &c" + Server.name + "&S, enjoy your stay." );
                     sw.Flush();
                     sw.Close();
@@ -383,13 +388,14 @@ namespace Overv {
                 IRCBot.Say( name + " joined the game." );
                 SendMessage( "Type &c/red&S or &9/blue&S to join a team." );
 
-                ushort x = (ushort)( ( 0.5 + level.spawnx ) * 32 );
-                ushort y = (ushort)( ( 1 + level.spawny ) * 32 );
-                ushort z = (ushort)( ( 0.5 + level.spawnz ) * 32 );
-                pos = new ushort[3] { x, y, z }; 
-                rot = new byte[2] { level.rotx, level.roty };
+                ushort x = level.spawnx;
+                ushort y = level.spawny;
+                ushort z = level.spawnz;
+                x *= 32; x += 16;
+                y *= 32; y += 0;
+                z *= 32; z += 16;
+                GlobalSpawn( this, x, y, z, level.rotx, level.roty, true );
 
-                GlobalSpawn( this, x, y, z, rot[0], rot[1], true );
                 foreach ( Player p in players ) {
                     if ( p.level == level && p != this && !p.hidden ) {
                         SendSpawn( p.playerID,
@@ -681,6 +687,10 @@ namespace Overv {
         }
 
         public void CheckPosition() {
+            if ( team == null ) {
+                return;
+            }
+
             ushort x = (ushort)( pos[0] / 32 );
             ushort y;
             ushort yh = (ushort)( ( pos[1] / 32 ) ); // gets head pos
@@ -770,8 +780,46 @@ namespace Overv {
                             p.killPlayer( this );
                             CTF.currLevel.Blockchange( p.placedMine.x, p.placedMine.y, p.placedMine.z, Block.air );
                             p.placedMine.isActive = false;
+
+                            int radius = CTF.mineBlastRadius;
+                            ushort minX = (ushort)( x - radius );
+                            ushort minY = (ushort)( y - radius );
+                            ushort minZ = (ushort)( z - radius );
+                            ushort maxX = (ushort)( x + radius );
+                            ushort maxY = (ushort)( y + radius );
+                            ushort maxZ = (ushort)( z + radius );
+
+                            for ( ushort xx = minX; xx <= maxX; xx++ ) {
+                                for ( ushort yy = minY; yy <= maxY; yy++ ) {
+                                    for ( ushort zz = minZ; zz <= maxZ; zz++ ) {
+                                        if ( level.GetBlock( xx, yy, zz ) != Block.blackrock && CTF.mineDestroyBlocks ) {
+                                            level.Blockchange( xx, yy, zz, Block.air );
+                                            Player.GlobalBlockchange( level, xx, yy, zz, Block.air );
+                                        }
+                                    }
+                                }
+                            }
                         }
                     }
+                }
+
+                if ( ( (ushort)( pos[0] / 32 ) < level.divider && team.flagBase[0] > level.divider ) || ( (ushort)( pos[0] / 32 ) > level.divider && team.flagBase[0] < level.divider ) ) { // Good, he is on the opposite side, now we can check for any player contact ;);)
+                    Team oppositeTeam = ( team == CTF.redTeam ) ? CTF.blueTeam : CTF.redTeam;
+                    oppositeTeam.players.ForEach( delegate( Player pl ) {
+                        ushort plposx = (ushort)( pl.pos[0] / 32 );
+                        ushort plposy = (ushort)( pl.pos[1] / 32 );
+                        ushort plposz = (ushort)( pl.pos[2] / 32 );
+
+                        if ( Math.Max( x, plposx ) - Math.Min( x, plposx ) <= 1 ) {
+                            if ( Math.Max( yh, plposy ) - Math.Min( yh, plposy ) <= 1 ) {
+                                if ( Math.Max( z, plposz ) - Math.Min( z, plposz ) <= 1 ) {
+                                    Player.GlobalMessage( "&f- " + color + name + "&S was tagged by " + pl.color + pl.name + "&S!" );
+                                    pl.killPlayer( this );
+                                    Thread.Sleep( 500 );
+                                }
+                            }
+                        }
+                    } );
                 }
             } );
         }
@@ -1258,11 +1306,11 @@ namespace Overv {
             }
 
             if ( changed != 0 )
-                foreach ( Player p in players ) {
+                players.ForEach( delegate( Player p ) {
                     if ( p != this && p.level == level ) {
                         p.SendRaw( msg, buffer );
                     }
-                }
+                } );
             oldpos = pos; oldrot = rot;
         }
         #endregion
@@ -1549,7 +1597,7 @@ namespace Overv {
                 double spamTimer = DateTime.Now.Subtract( oldestTime ).TotalSeconds;
                 if ( spamTimer < spamBlockTimer ) {
                     this.Kick( "You were kicked by antigrief system. Slow down." );
-                    SendMessage( Colour.red + name + " was kicked for suspected griefing." );
+                    SendMessage( Colors.red + name + " was kicked for suspected griefing." );
                     Server.s.Log( name + " was kicked for block spam (" + spamBlockCount + " blocks in " + spamTimer + " seconds)" );
                     return true;
                 }

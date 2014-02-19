@@ -22,7 +22,7 @@ namespace Overv
         public static List<Group> groups = new List<Group>();
         public static List<CommandAllowance> commandPerms = new List<CommandAllowance>();
         public static Group defaultGroup;
-        public static string groupsFile = "groups.properties";
+        public static string groupsFile = "properties/groups.properties";
 
         public string name;
         public string color;
@@ -135,8 +135,8 @@ namespace Overv
         }
 
         public static void LoadCommands() {
-            if ( File.Exists( "command.properties" ) ) {
-                foreach ( string line in File.ReadAllLines( "command.properties" ) ) {
+            if ( File.Exists( "properties/command.properties" ) ) {
+                foreach ( string line in File.ReadAllLines( "properties/command.properties" ) ) {
                     Command cmd = Command.all.Find( line.Split( ':' )[0] );
                     LevelPermission perm = (LevelPermission)int.Parse( line.Split( ':' )[1] );
 
@@ -164,7 +164,7 @@ namespace Overv
         }
 
         public static void SaveCommands() {
-            StreamWriter sw = new StreamWriter( File.Create( "command.properties" ) );
+            StreamWriter sw = new StreamWriter( File.Create( "properties/command.properties" ) );
             foreach ( CommandAllowance cmda in commandPerms ) {
                 sw.WriteLine( cmda.cmd.name + ":" + cmda.perm.GetHashCode() );
             }

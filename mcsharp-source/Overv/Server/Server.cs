@@ -128,6 +128,10 @@ namespace Overv {
 
         }
         public void Start() {
+            if ( !Directory.Exists( "players" ) ) { Directory.CreateDirectory( "players" ); }
+            if ( !Directory.Exists( "properties" ) ) { Directory.CreateDirectory( "properties" ); }
+            if ( !Directory.Exists( "text" ) ) { Directory.CreateDirectory( "text" ); }
+
             Log( "Starting server..." );
             Properties.Load();
 
@@ -167,7 +171,6 @@ namespace Overv {
             ml.Queue( delegate {
                 banned = PlayerList.Load( "banned.txt" );
                 bannedIP = PlayerList.Load( "banned-ip.txt" );
-                ircControllers = PlayerList.Load( "../IRC_Controllers.txt" );
 
                 Command.Load();
                 Group.Load();
@@ -179,9 +182,9 @@ namespace Overv {
             } );
 
             ml.Queue( delegate {
-                if ( File.Exists( "autoload.txt" ) ) {
+                if ( File.Exists( "levels/autoload.txt" ) ) {
                     try {
-                        string[] lines = File.ReadAllLines( "autoload.txt" );
+                        string[] lines = File.ReadAllLines( "levels/autoload.txt" );
                         foreach ( string line in lines ) {
                             //int temp = 0;
                             string _line = line.Trim();
@@ -268,15 +271,16 @@ namespace Overv {
                 messageTimer.Start();
                 process = System.Diagnostics.Process.GetCurrentProcess();
 
-                if ( File.Exists( "messages.txt" ) ) {
-                    StreamReader r = File.OpenText( "messages.txt" );
+                if ( File.Exists( "text/messages.txt" ) ) {
+                    StreamReader r = File.OpenText( "text/messages.txt" );
                     while ( !r.EndOfStream )
                         messages.Add( r.ReadLine() );
                 } else
-                    File.Create( "messages.txt" ).Close();
+                    File.Create( "text/messages.txt" ).Close();
 
-                if ( Server.irc )
+                if ( Server.irc ) {
                     new IRCBot();
+                }
 
                 new AutoSaver( Server.backupInterval );
             } );

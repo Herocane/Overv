@@ -36,6 +36,7 @@ namespace Overv {
             p.ClearBlockchange();
 
             p.level.maxBuildHeight = y;
+            p.level.SaveProperties();
 
             p.SendMessage( "Max build height set!" );
         }

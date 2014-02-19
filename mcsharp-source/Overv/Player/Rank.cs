@@ -7,7 +7,7 @@ using System.IO;
 namespace Overv {
     public class Rank {
         public static List<Rank> ranks = new List<Rank>();
-        static string ranksFile = "ranks.properties";
+        static string ranksFile = "properties/ranks.properties";
 
         public int id;
         public int requiredxp;

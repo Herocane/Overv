@@ -7,29 +7,31 @@ using System.IO;
 
 namespace Overv {
     public class CTF {
-        public static Level currLevel;
-        public static Team redTeam;
-        public static Team blueTeam;
-        public static bool gameOn;
-        public static int scoreLimit = 3;
+        public static Level currLevel; // The map which is currently being played on.
+        public static Team redTeam; // Red Team initializer.
+        public static Team blueTeam; // Blue Team initializer.
+        public static bool gameOn; // Whether the game is running or not.
+        public static int scoreLimit = 3; // How many flag captures it takes to win a round.
 
-        public static Thread gameThread;
-        public static Thread flagThread;
-        public static Thread returnThread;
+        public static Thread gameThread; // Thread for the game (so it doesn't interrupt the general flow of the server)
+        public static Thread flagThread; // Thread for updating the flag positions.
+        public static Thread returnThread; // Thread for returning the flags.
 
-        public static int returnTime = 15;
-        public static int voteTime = 20; // The voting time
-        public static int drownTime = 14;
-        public static int mineActivationTime = 3; //How long it takes to activate the mine
-        public static int takeFlagReward = 2; //Reward for taking the Flag
-        public static int captureFlagReward = 20; //Reward for Capturing the Flag
-        public static int returnFlagReward = 4; //Reward for returning the flag
-        public static int killPlayerReward = 1; //Reward for Killing the Player
-        public static int mineBlastRadius = 2; //Mine activation Radius
-        public static int tntBlastRadius = 3; //tnt blast radius
-        public static bool mineDestroyBlocks = false; //Do mine destroy blocks?
-        public static bool tntDestroyBlocks = false; //Do tnt destroy blocks?
-        public static bool allowOpHax = false; //Should ops allow hacks?
+        public static string mainLevel = "ctf_bridge"; // The first map which will be used for the very first round before voting kicks in.
+        public static int returnTime = 15; // The time the flag can be left unattended before being returned to base.
+        public static int voteTime = 20; // The time allowed for players to vote for the next map.
+        public static int drownTime = 14; // The time you're allowed to be underwater before drowning.
+        public static int mineActivationTime = 3; // How long it takes after placing a mine before the mine can blow people up.
+        public static int takeFlagReward = 2; // Reward for taking the Flag.
+        public static int captureFlagReward = 20; // Reward for capturing the Flag.
+        public static int returnFlagReward = 4; // Reward for returning the flag.
+        public static int killPlayerReward = 1; // Reward for killing a player.
+        public static int mineBlastRadius = 2; // Mine activation radius.
+        public static int tntBlastRadius = 3; // TNT blast radius.
+        public static bool mineDestroyBlocks = false; // Do mines destroy blocks?
+        public static bool tntDestroyBlocks = false; // Does TNT destroy blocks?
+        public static bool allowOpHax = false; // Should ops be allowed hacks?
+
         static int redReturnCount;
         static int blueReturnCount;
 
@@ -131,6 +133,7 @@ namespace Overv {
             List<Player> ordered = Player.players.OrderByDescending( ply => ply.captureCount ).ThenBy( ply => ply.captureStreak ).ToList();
             ordered.ForEach( delegate( Player p ) {
                 Player.GlobalMessage( "     " + p.color + p.name + " &a(" + p.captureCount + " captures, " + p.kills + " kills, " + p.deaths + " deaths)" );
+
             } );
             
             winners.points = 0;
@@ -140,6 +143,8 @@ namespace Overv {
 
             ReturnFlag( redTeam, false );
             ReturnFlag( blueTeam, false );
+
+            currLevel.blocks = currLevel.backupBlocks;
 
             Thread.Sleep( 5000 );
 
@@ -202,7 +207,7 @@ namespace Overv {
             if ( optionCount == 1 ) {
                 currLevel.blocks = currLevel.backupBlocks;
                 Player.players.ForEach( delegate( Player p ) {
-                    Command.all.Find( "goto" ).Use( p, newLevel.name );
+                    Command.all.Find( "goto" ).Use( p, currLevel.name );
                     Thread.Sleep( 500 );
                 } );
                 Setup( currLevel );
@@ -270,6 +275,7 @@ namespace Overv {
                 Server.s.CTFLog( "Next map is: " + newLevel.name + "." );
                 Thread.Sleep( 7500 );
                 currLevel.blocks = currLevel.backupBlocks;
+                newLevel.blocks = newLevel.backupBlocks;
                 Player.players.ForEach( delegate( Player p ) {
                     Command.all.Find( "goto" ).Use( p, newLevel.name );
                     Thread.Sleep( 500 );
@@ -364,9 +370,9 @@ namespace Overv {
             if ( p.carryingFlag ) { return; }
             if ( redTeam.players.Count < 1 || blueTeam.players.Count < 1) {
                 if ( p.lastMsg != "&f- &SYou cannot take the flag with no opposition!" ) {
-                    //p.SendMessage( "&f- &SYou cannot take the flag with no opposition!" );
+                    p.SendMessage( "&f- &SYou cannot take the flag with no opposition!" );
                 }
-                //return;
+                return;
             }
             team.hasFlag = p;
             team.flagIsHome = false;

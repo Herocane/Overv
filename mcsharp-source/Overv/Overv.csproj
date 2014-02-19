@@ -106,12 +106,13 @@
     <Compile Include="Commands\CmdLike.cs" />
     <Compile Include="Commands\CmdSetBuildHeight.cs" />
     <Compile Include="Commands\CmdGag.cs" />
+    <Compile Include="Commands\CmdSetDivider.cs" />
     <Compile Include="Levels\AutoSaver.cs" />
     <Compile Include="Levels\Block.cs" />
     <Compile Include="Color.cs" />
     <Compile Include="Commands\CmdAfk.cs" />
     <Compile Include="Commands\CmdBan.cs" />
-    <Compile Include="Commands\CmdBanip.cs" />
+    <Compile Include="Commands\CmdBanIP.cs" />
     <Compile Include="Commands\CmdDeleteLvl.cs" />
     <Compile Include="Commands\CmdGoto.cs" />
     <Compile Include="Commands\CmdPermissionBuild.cs" />
@@ -129,11 +130,11 @@
     <Compile Include="Commands\CmdUnban.cs" />
     <Compile Include="Commands\CmdUnbanip.cs" />
     <Compile Include="Commands\CmdMove.cs" />
-    <Compile Include="Heartbeat.cs" />
-    <Compile Include="IRCBot.cs" />
+    <Compile Include="Network\Heartbeat.cs" />
+    <Compile Include="Network\IRCBot.cs" />
     <Compile Include="Levels\Level.cs" />
     <Compile Include="Levels\MapGenerator.cs" />
-    <Compile Include="Logger.cs" />
+    <Compile Include="Server\Logger.cs" />
     <Compile Include="Player\PlayerDB.cs" />
     <Compile Include="Player\Rank.cs" />
     <Compile Include="Queue\Cache.cs" />
@@ -149,9 +150,9 @@
     <Compile Include="Commands\CommandList.cs" />
     <Compile Include="Player\Group.cs" />
     <Compile Include="Player\Player.cs" />
-    <Compile Include="Properties.cs" />
+    <Compile Include="Server\Properties.cs" />
     <Compile Include="Queue\TorrentException.cs" />
-    <Compile Include="Server.cs" />
+    <Compile Include="Server\Server.cs" />
   </ItemGroup>
   <ItemGroup>
     <BootstrapperPackage Include="Microsoft.Net.Client.3.5">

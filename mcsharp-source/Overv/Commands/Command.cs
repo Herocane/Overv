@@ -55,6 +55,7 @@ namespace Overv {
             all.Add( new CmdLike() );
             all.Add( new CmdDislike() );
             all.Add( new CmdSetBuildHeight() );
+            all.Add( new CmdSetDivider() );
         }
     }
 }

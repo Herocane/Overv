@@ -109,12 +109,11 @@ namespace Overv
                             serverURL = line;
 
                             Server.s.UpdateUrl( serverURL );
-                            Server.s.Log( "URL saved to externalurl.txt..." );
-                            File.WriteAllText( "externalurl.txt", serverURL );
+                            Server.s.Log( "URL saved to text/externalurl.txt..." );
+                            File.WriteAllText( "text/externalurl.txt", serverURL );
                         }
                     }
                 }
-                //Server.s.Log(string.Format("Heartbeat: {0}", type));
             } catch ( WebException e ) {
                 if ( e.Status == WebExceptionStatus.Timeout ) {
                     Server.s.Log( string.Format( "Timeout: {0}", type ) );

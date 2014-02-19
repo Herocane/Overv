@@ -15,7 +15,7 @@
 using System;
 
 namespace Overv {
-	public static class Colour {
+	public static class Colors {
 		public const string black = "&0";
 		public const string navy = "&1";
 		public const string green = "&2";
@@ -53,7 +53,9 @@ namespace Overv {
 					case "white": return white;
 					default: return "";
 			}
-		} public static string Name(string str) {
+		} 
+        
+        public static string Name(string str) {
 			switch (str) {
 					case black: return "black";
 					case navy: return "navy";
@@ -73,7 +75,9 @@ namespace Overv {
 					case white: return "white";
 					default: return "";
 			}
-		} public static RGB getRGB( string str ) {
+		} 
+        
+        public static RGB getRGB( string str ) {
             switch ( str ) {
                 case black: return new RGB( 0, 0, 0 );
                 case navy: return new RGB( 0, 0, 170 );

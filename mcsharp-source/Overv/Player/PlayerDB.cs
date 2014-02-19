@@ -7,7 +7,7 @@ using System.IO;
 namespace Overv {
     public class PlayerDB {
         public static void Load( Player p ) {
-            string file = p.name + ".database";
+            string file = "players/" + p.name + ".database";
 
             if ( File.Exists( file ) ) {
                 foreach ( string line in File.ReadAllLines( file ) ) {
@@ -19,6 +19,21 @@ namespace Overv {
                             case "points":
                                 p.points = int.Parse( value );
                                 break;
+                            case "captures":
+                                p.totalCaptures = int.Parse( value );
+                                break;
+                            case "returns":
+                                p.totalReturns = int.Parse( value );
+                                break;
+                            case "kills":
+                                p.totalKills = int.Parse( value );
+                                break;
+                            case "deaths":
+                                p.totalDeaths = int.Parse( value );
+                                break;
+                            case "logins":
+                                p.totalLogins = int.Parse( value );
+                                break;
                         }
                     }
                 }
@@ -29,8 +44,13 @@ namespace Overv {
         }
 
         public static void Save( Player p ) {
-            StreamWriter sw = new StreamWriter( File.Create( p.name + ".database" ) );
+            StreamWriter sw = new StreamWriter( File.Create( "players/" + p.name + ".database" ) );
             sw.WriteLine( "Points = " + p.points );
+            sw.WriteLine( "Captures = " + p.totalCaptures );
+            sw.WriteLine( "Returns = " + p.totalReturns );
+            sw.WriteLine( "Kills = " + p.totalKills );
+            sw.WriteLine( "Deaths = " + p.totalDeaths );
+            sw.WriteLine( "Logins = " + p.totalLogins );
             sw.Flush();
             sw.Close();
             sw.Dispose();

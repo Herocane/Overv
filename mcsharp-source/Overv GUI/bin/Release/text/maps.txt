@@ -1,0 +1,2 @@
+ctf_arena : HeroCane : { Should come with server } A tiny arena of total madness, good luck getting that flag home! : n/a
+ctf_bridge : HeroCane : { Should come with server } Another map, slightly bigger than CTF_ARENA and a bit more interesting. Very destructible though. : n/a

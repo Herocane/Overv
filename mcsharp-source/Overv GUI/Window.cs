@@ -88,8 +88,8 @@ namespace Overv.Gui
         void UpdateMaps() {
             try {
                 WebClient wc = new WebClient();
-                wc.DownloadFile( "http://mcderp.x10.mx/downloads/availablemaps.txt", "maps.txt" );
-                foreach ( string line in File.ReadAllLines( "maps.txt" ) ) {
+                wc.DownloadFile( "http://mcderp.x10.mx/downloads/availablemaps.txt", "text/maps.txt" );
+                foreach ( string line in File.ReadAllLines( "text/maps.txt" ) ) {
                     availableMaps.Add( new MapInfo( line.Split( ':' )[0].Trim(), line.Split( ':' )[1].Trim(), line.Split( ':' )[2].Trim(), line.Split( ':' )[3].Trim() ) );
                 }
                 wc.Dispose();
@@ -232,8 +232,9 @@ namespace Overv.Gui
         /// <param name="hasLeft"></param>
         public void UpdatePlayerBalloon( Player p, bool hasLeft ) {
             NotifyIcon notify = new NotifyIcon();
-            notify.Icon = SystemIcons.Application;
+            notify.Icon = this.Icon;
             notify.Visible = true;
+            notify.BalloonTipIcon = ToolTipIcon.Info;
             notify.BalloonTipTitle = p.name + ((hasLeft == true) ? " left the game." : " joined the game.");
             notify.BalloonTipText = "There are now " + ((hasLeft == true) ? (Player.players.Count - 1) : Player.players.Count) + " players online.";
             notify.ShowBalloonTip( 3000 );

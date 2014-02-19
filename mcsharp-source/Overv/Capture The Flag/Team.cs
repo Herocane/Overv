@@ -21,7 +21,7 @@ namespace Overv {
         public bool flagIsHome;
 
         public Team( string newColor, byte newFlagBlock, bool add = true ) {
-            name = Colour.Name( newColor );
+            name = Colors.Name( newColor );
             name = name[0].ToString().ToUpper() + name.Remove(0, 1);
             color = newColor;
             points = 0;
@@ -91,7 +91,7 @@ namespace Overv {
                 ushort y = spawn[1];
                 ushort z = spawn[2];
                 x *= 32; x += 16;
-                y *= 32; y += 32;
+                y *= 32; y += 0;
                 z *= 32; z += 16;
                 p.SendSpawn( (byte)-1, p.color + p.name, x, y, z, spawnrot[0], spawnrot[1] );
             }

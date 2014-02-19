@@ -29,7 +29,7 @@ namespace Overv
             }
 
             Player who = Player.Find( message.Split( ' ' )[0].Trim() );
-            if ( who == p ) {
+            if ( who == p || who.group.permission <= p.group.permission ) {
                 return;
             }
 
@@ -39,29 +39,29 @@ namespace Overv
             if ( p != null ) {
                 if ( who != null ) {
                     if ( silent ) {
-                        Player.GlobalMessage( "&3(Someone) &Sbanned " + who.color + who.name + "&S." );
+                        Player.GlobalMessage( "&3(Someone) &Sbanned " + who.color + who.name );
                     } else {
-                        Player.GlobalMessage( p.color + p.name + " &Sbanned " + who.color + who.name + "&S." );
+                        Player.GlobalMessage( p.color + p.name + " &Sbanned " + who.color + who.name );
                     }
                 } else {
                     if ( silent ) {
-                        Player.GlobalMessage( "&3(Someone) &Sbanned &8" + message.Split( ' ' )[0].Trim() + "&f(offline)&S." );
+                        Player.GlobalMessage( "&3(Someone) &Sbanned " + message.Split( ' ' )[0].Trim() + " &f(offline)" );
                     } else {
-                        Player.GlobalMessage( p.color + p.name + " &Sbanned &8" + message.Split( ' ' )[0].Trim() + "&f(offline)&S." );
+                        Player.GlobalMessage( p.color + p.name + " &Sbanned " + message.Split( ' ' )[0].Trim() + " &f(offline)" );
                     }
                 }
             } else {
                 if ( who != null ) {
                     if ( silent ) {
-                        Player.GlobalMessage( "&3(Someone) &Sbanned " + who.color + who.name + "&S." );
+                        Player.GlobalMessage( "&3(Someone) &Sbanned " + who.color + who.name );
                     } else {
-                        Player.GlobalMessage( "&8Console &Sbanned " + who.color + who.name + "&S." );
+                        Player.GlobalMessage( "&8Console &Sbanned " + who.color + who.name );
                     }
                 } else {
                     if ( silent ) {
-                        Player.GlobalMessage( "&3(Someone) &Sbanned &8" + message.Split( ' ' )[0].Trim() + "&f(offline)&S." );
+                        Player.GlobalMessage( "&3(Someone) &Sbanned " + message.Split( ' ' )[0].Trim() + " &f(offline)" );
                     } else {
-                        Player.GlobalMessage( "&8Console &Sbanned &8" + message.Split( ' ' )[0].Trim() + "&f(offline)&S." );
+                        Player.GlobalMessage( "&8Console &Sbanned " + message.Split( ' ' )[0].Trim() + " &f(offline)" );
                     }
                 }
             }

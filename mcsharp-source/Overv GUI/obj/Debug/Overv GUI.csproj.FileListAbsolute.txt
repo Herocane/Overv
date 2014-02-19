@@ -10,3 +10,8 @@ C:\Users\Sam\Documents\GitHub\Overv\mcsharp-source\Overv GUI\obj\Debug\GenerateR
 C:\Users\Sam\Documents\GitHub\Overv\mcsharp-source\Overv GUI\obj\Debug\GenerateResource.write.1.tlog
 C:\Users\Sam\Documents\GitHub\Overv\mcsharp-source\Overv GUI\obj\Debug\Overv GUI.exe
 C:\Users\Sam\Documents\GitHub\Overv\mcsharp-source\Overv GUI\obj\Debug\Overv GUI.pdb
+C:\Users\Sam\Documents\GitHub\Overv\mcsharp-source\Overv GUI\bin\Release\Overv GUI.exe
+C:\Users\Sam\Documents\GitHub\Overv\mcsharp-source\Overv GUI\bin\Release\Overv GUI.pdb
+C:\Users\Sam\Documents\GitHub\Overv\mcsharp-source\Overv GUI\bin\Release\Overv.dll
+C:\Users\Sam\Documents\GitHub\Overv\mcsharp-source\Overv GUI\bin\Release\Meebey.SmartIrc4net.dll
+C:\Users\Sam\Documents\GitHub\Overv\mcsharp-source\Overv GUI\bin\Release\Overv.pdb

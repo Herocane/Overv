@@ -21,8 +21,8 @@ namespace Overv
         public static void Load() {
             GenerateSalt();
 
-            if ( File.Exists( "server.properties" ) ) {
-                string[] lines = File.ReadAllLines( "server.properties" );
+            if ( File.Exists( "properties/server.properties" ) ) {
+                string[] lines = File.ReadAllLines( "properties/server.properties" );
                 foreach ( string line in lines ) {
                     if ( line != "" && line[0] != '#' ) {
                         string key = line.Split( '=' )[0].Trim();
@@ -154,6 +154,9 @@ namespace Overv
                             case "console-only":
                                 Server.console = ( value.ToLower() == "true" ) ? true : false;
                                 break;
+                            case "main-level":
+                                CTF.mainLevel = value;
+                                break;
                             case "score-limit":
                                 CTF.scoreLimit = int.Parse( value );
                                 break;
@@ -224,7 +227,7 @@ namespace Overv
 
         static void Save() {
             try {
-                StreamWriter sw = new StreamWriter( File.Create( "server.properties" ) );
+                StreamWriter sw = new StreamWriter( File.Create( "properties/server.properties" ) );
                 sw.WriteLine( "# Edit the settings below to modify how your server operates." );
                 sw.WriteLine();
                 sw.WriteLine( "# Server options:" );
@@ -240,6 +243,7 @@ namespace Overv
                 sw.WriteLine( "Load-On-Goto = " + Server.guestGoto.ToString().ToLower() );
                 sw.WriteLine();
                 sw.WriteLine( "# CTF options:" );
+                sw.WriteLine( "Main-Level = " + CTF.mainLevel );
                 sw.WriteLine( "Score-Limit = " + CTF.scoreLimit );
                 sw.WriteLine( "Return-Time = " + CTF.returnTime );
                 sw.WriteLine( "Vote-Time = " + CTF.voteTime );

@@ -36,13 +36,13 @@ namespace Overv {
             }
 
             retry:
-            if ( File.Exists( "help.txt" ) ) {
-                foreach ( string line in File.ReadAllLines( "help.txt" ) ) {
+            if ( File.Exists( "text/help.txt" ) ) {
+                foreach ( string line in File.ReadAllLines( "text/help.txt" ) ) {
                     p.SendMessage( line );
                 }
             } else {
-                StreamWriter sw = new StreamWriter( File.Create( "help.txt" ) );
-                sw.WriteLine( "&d(This message is customisable in help.txt!)\r\nRun to the other side and walk throught the flag pole to take their flag, then run back to base and do the same to capture the other team's flag.\r\nBear in mind that your flag MUST be at your base to capture the other teams flag!\r\nTo kill players, place tnt and explode by placing a purple block, or place a mine by placing a dark grey block and hope that someone runs into it!" );
+                StreamWriter sw = new StreamWriter( File.Create( "text/help.txt" ) );
+                sw.WriteLine( "&d(This message is customisable in help.txt!)\r\n&f- &SRun to the other side and walk through the flag pole to take their flag, then run back to base and do the same to capture their flag.\r\n&f- &SBear in mind that your flag MUST be at your base to capture the other teams flag!\r\n&f- &STo kill players, place tnt and explode by placing a purple block, or place a mine by placing a dark grey block and hope that someone runs into it!" );
                 sw.Flush();
                 sw.Close();
                 sw.Dispose();
